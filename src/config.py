@@ -24,13 +24,19 @@ for _p in (DATA_PROCESSED, MODELS_DIR, OUTPUTS):
     _p.mkdir(parents=True, exist_ok=True)
 
 
+def _env(name: str, default: str | None = None) -> str | None:
+    """Lê variável de ambiente ignorando espaços e comentários colados ao valor."""
+    v = (os.getenv(name) or "").split(" #")[0].strip()
+    return v or default
+
+
 @dataclass(frozen=True)
 class AzureSettings:
-    speech_key: str | None = os.getenv("AZURE_SPEECH_KEY") or None
-    speech_region: str | None = os.getenv("AZURE_SPEECH_REGION") or None
-    language_key: str | None = os.getenv("AZURE_LANGUAGE_KEY") or None
-    language_endpoint: str | None = os.getenv("AZURE_LANGUAGE_ENDPOINT") or None
-    speech_language: str = os.getenv("AZURE_SPEECH_LANGUAGE", "pt-BR")
+    speech_key: str | None = _env("AZURE_SPEECH_KEY")
+    speech_region: str | None = _env("AZURE_SPEECH_REGION")
+    language_key: str | None = _env("AZURE_LANGUAGE_KEY")
+    language_endpoint: str | None = _env("AZURE_LANGUAGE_ENDPOINT")
+    speech_language: str = _env("AZURE_SPEECH_LANGUAGE", "pt-BR")
 
     @property
     def speech_enabled(self) -> bool:
@@ -42,4 +48,4 @@ class AzureSettings:
 
 
 AZURE = AzureSettings()
-ALERT_WEBHOOK_URL = os.getenv("ALERT_WEBHOOK_URL") or None
+ALERT_WEBHOOK_URL = _env("ALERT_WEBHOOK_URL")

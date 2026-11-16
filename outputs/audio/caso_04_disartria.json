@@ -9,9 +9,8 @@
       "evidencias": [
         "articulação pouco nítida: energia de consoantes (>2 kHz) 98% menor",
         "articulação 14% mais lenta",
-        "relato: fala enrolada",
         "relato: braço direito está fraco",
-        "relato: tontura"
+        "relato: tonturas"
       ]
     }
   ],
@@ -80,218 +79,331 @@
     }
   },
   "transcricao": {
-    "provider": "Whisper local (fallback)",
-    "language": "pt",
-    "text": "Eu acordei com a fala enrolada. Meu braço direito está fraco e estou me ligando. A minha boca está meio torta e eu estou com tontura. Como começou faz umas duas horas?",
+    "provider": "Azure Speech to Text",
+    "language": "pt-BR",
+    "text": "Eu acordei com a sala enrolada. Meu braço direito está fraco e Formiga? A minha bolsa está muito alta e eu estou com tonturas. Como começou a fazer umas 2 horas?",
     "segments": [
       {
-        "text": "Eu acordei com a fala enrolada. Meu braço direito está fraco e estou me ligando. A minha boca está meio torta e eu estou com tontura. Como começou faz umas duas horas?",
-        "offset_s": 0.0
+        "text": "Eu acordei com a sala enrolada.",
+        "offset_s": 0.07,
+        "duration_s": 2.96,
+        "confidence": 0.81615007
+      },
+      {
+        "text": "Meu braço direito está fraco e Formiga?",
+        "offset_s": 3.95,
+        "duration_s": 5.04,
+        "confidence": 0.6437837
+      },
+      {
+        "text": "A minha bolsa está muito alta e eu estou com tonturas.",
+        "offset_s": 10.07,
+        "duration_s": 5.4,
+        "confidence": 0.71704155
+      },
+      {
+        "text": "Como começou a fazer umas 2 horas?",
+        "offset_s": 16.39,
+        "duration_s": 3.08,
+        "confidence": 0.708216
       }
     ],
     "words": [
       {
-        "word": "Eu",
-        "start_s": 0.0,
-        "end_s": 0.18
+        "word": "eu",
+        "start_s": 0.07,
+        "end_s": 0.23
       },
       {
         "word": "acordei",
-        "start_s": 0.18,
-        "end_s": 1.08
+        "start_s": 0.23,
+        "end_s": 1.11
       },
       {
         "word": "com",
-        "start_s": 1.08,
-        "end_s": 1.26
+        "start_s": 1.11,
+        "end_s": 1.31
       },
       {
         "word": "a",
-        "start_s": 1.26,
-        "end_s": 1.38
+        "start_s": 1.31,
+        "end_s": 1.63
       },
       {
-        "word": "fala",
-        "start_s": 1.38,
-        "end_s": 1.78
+        "word": "sala",
+        "start_s": 1.63,
+        "end_s": 1.91
       },
       {
-        "word": "enrolada.",
-        "start_s": 1.78,
-        "end_s": 3.52
+        "word": "enrolada",
+        "start_s": 1.91,
+        "end_s": 3.03
       },
       {
-        "word": "Meu",
-        "start_s": 3.86,
-        "end_s": 4.12
+        "word": "meu",
+        "start_s": 3.95,
+        "end_s": 4.23
       },
       {
         "word": "braço",
-        "start_s": 4.12,
-        "end_s": 4.92
+        "start_s": 4.31,
+        "end_s": 4.87
       },
       {
         "word": "direito",
-        "start_s": 4.92,
-        "end_s": 5.46
+        "start_s": 5.15,
+        "end_s": 5.67
       },
       {
         "word": "está",
-        "start_s": 5.46,
-        "end_s": 6.44
+        "start_s": 6.35,
+        "end_s": 6.51
       },
       {
         "word": "fraco",
-        "start_s": 6.44,
-        "end_s": 7.12
+        "start_s": 6.79,
+        "end_s": 7.55
       },
       {
         "word": "e",
-        "start_s": 7.12,
-        "end_s": 7.52
+        "start_s": 7.55,
+        "end_s": 7.59
       },
       {
-        "word": "estou",
-        "start_s": 7.52,
-        "end_s": 7.8
+        "word": "formiga",
+        "start_s": 7.59,
+        "end_s": 8.99
       },
       {
-        "word": "me",
-        "start_s": 7.8,
-        "end_s": 8.22
-      },
-      {
-        "word": "ligando.",
-        "start_s": 8.22,
-        "end_s": 9.98
-      },
-      {
-        "word": "A",
-        "start_s": 10.02,
-        "end_s": 10.22
+        "word": "a",
+        "start_s": 10.07,
+        "end_s": 10.27
       },
       {
         "word": "minha",
-        "start_s": 10.22,
-        "end_s": 10.56
+        "start_s": 10.27,
+        "end_s": 10.67
       },
       {
-        "word": "boca",
-        "start_s": 10.56,
-        "end_s": 11.0
+        "word": "bolsa",
+        "start_s": 10.67,
+        "end_s": 11.23
       },
       {
         "word": "está",
-        "start_s": 11.0,
-        "end_s": 11.54
+        "start_s": 11.23,
+        "end_s": 11.67
       },
       {
-        "word": "meio",
-        "start_s": 11.54,
-        "end_s": 11.88
+        "word": "muito",
+        "start_s": 11.67,
+        "end_s": 11.95
       },
       {
-        "word": "torta",
-        "start_s": 11.88,
-        "end_s": 13.14
+        "word": "alta",
+        "start_s": 12.15,
+        "end_s": 13.07
       },
       {
         "word": "e",
-        "start_s": 13.14,
-        "end_s": 13.54
+        "start_s": 13.39,
+        "end_s": 13.59
       },
       {
         "word": "eu",
-        "start_s": 13.54,
-        "end_s": 13.72
+        "start_s": 13.59,
+        "end_s": 13.75
       },
       {
         "word": "estou",
-        "start_s": 13.72,
-        "end_s": 14.12
+        "start_s": 13.75,
+        "end_s": 14.23
       },
       {
         "word": "com",
-        "start_s": 14.12,
-        "end_s": 14.54
+        "start_s": 14.23,
+        "end_s": 14.59
       },
       {
-        "word": "tontura.",
-        "start_s": 14.54,
-        "end_s": 16.0
+        "word": "tonturas",
+        "start_s": 14.59,
+        "end_s": 15.47
       },
       {
-        "word": "Como",
-        "start_s": 16.28,
-        "end_s": 16.72
+        "word": "como",
+        "start_s": 16.39,
+        "end_s": 16.71
       },
       {
         "word": "começou",
-        "start_s": 16.72,
-        "end_s": 17.16
+        "start_s": 16.71,
+        "end_s": 17.31
       },
       {
-        "word": "faz",
-        "start_s": 17.16,
-        "end_s": 17.58
+        "word": "a",
+        "start_s": 17.31,
+        "end_s": 17.35
+      },
+      {
+        "word": "fazer",
+        "start_s": 17.35,
+        "end_s": 17.71
       },
       {
         "word": "umas",
-        "start_s": 17.58,
-        "end_s": 17.82
+        "start_s": 17.71,
+        "end_s": 17.99
       },
       {
         "word": "duas",
-        "start_s": 17.82,
-        "end_s": 18.48
+        "start_s": 18.31,
+        "end_s": 18.63
       },
       {
-        "word": "horas?",
-        "start_s": 18.48,
-        "end_s": 20.48
+        "word": "horas",
+        "start_s": 18.63,
+        "end_s": 19.47
       }
     ],
-    "latency_s": 3.39,
+    "latency_s": 7.69,
     "errors": [],
     "ritmo_transcricao": {
-      "palavras_por_min": 93.8,
-      "pausas_entre_palavras_>=0.5s": 0,
-      "pausa_max_s": 0.34
+      "palavras_por_min": 95.9,
+      "pausas_entre_palavras_>=0.5s": 4,
+      "pausa_max_s": 1.08
     }
   },
   "nlp": {
-    "provider": "Léxico local (fallback)",
+    "provider": "Azure AI Language (Text Analytics)",
+    "errors": [],
     "sentimento": {
       "geral": "negative",
       "scores": {
-        "positivo": 0.0,
-        "neutro": 0.0,
-        "negativo": 1.0
+        "positivo": 0.01,
+        "neutro": 0.21,
+        "negativo": 0.78
       },
-      "frases": []
+      "frases": [
+        {
+          "texto": "Eu acordei com a sala enrolada. ",
+          "sentimento": "neutral",
+          "negativo": 0.01,
+          "opinioes": []
+        },
+        {
+          "texto": "Meu braço direito está fraco e Formiga? ",
+          "sentimento": "negative",
+          "negativo": 0.99,
+          "opinioes": []
+        },
+        {
+          "texto": "A minha bolsa está muito alta e eu estou com tonturas. ",
+          "sentimento": "negative",
+          "negativo": 0.57,
+          "opinioes": []
+        },
+        {
+          "texto": "Como começou a fazer umas 2 horas?",
+          "sentimento": "neutral",
+          "negativo": 0.01,
+          "opinioes": []
+        }
+      ]
     },
-    "frases_chave": [],
-    "entidades_saude": [],
-    "errors": [],
-    "latency_s": 0.0,
-    "termos_criticos": [
+    "frases_chave": [
+      "braço direito",
+      "sala",
+      "Formiga",
+      "bolsa",
+      "tonturas",
+      "2 horas"
+    ],
+    "entidades_saude": [
       {
-        "termo": "fala enrolada",
-        "categoria": "neurologica_avc",
-        "peso": 1.0
+        "texto": "braço",
+        "categoria": "BodyStructure",
+        "confianca": 0.99,
+        "negado": false,
+        "links": [
+          "UMLS:C0446516",
+          "AOD:0000017006",
+          "CHV:0000035650"
+        ]
       },
+      {
+        "texto": "direito",
+        "categoria": "Direction",
+        "confianca": 0.98,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "fraco",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.92,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "Formiga",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.65,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "bolsa",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.63,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "muito alta",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.68,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "tonturas",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": false,
+        "links": [
+          "UMLS:C0012833",
+          "AOD:0000004419",
+          "BI:BI00535"
+        ]
+      },
+      {
+        "texto": "umas 2 horas",
+        "categoria": "Time",
+        "confianca": 0.89,
+        "negado": false,
+        "links": []
+      }
+    ],
+    "latency_s": 6.56,
+    "termos_criticos": [
       {
         "termo": "braço direito está fraco",
         "categoria": "neurologica_avc",
         "peso": 0.8
       },
       {
-        "termo": "tontura",
+        "termo": "tonturas",
         "categoria": "neurologica_avc",
         "peso": 0.5
       }
     ]
   },
-  "sintomas_azure_health": [],
-  "tempo_processamento_s": 4.1
+  "sintomas_azure_health": [
+    "fraco",
+    "Formiga",
+    "bolsa",
+    "muito alta",
+    "tonturas"
+  ],
+  "tempo_processamento_s": 15.0
 }

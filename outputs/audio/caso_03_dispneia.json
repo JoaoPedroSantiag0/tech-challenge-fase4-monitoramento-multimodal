@@ -19,7 +19,7 @@
       "severidade": "INFO",
       "descricao": "Sentimento negativo intenso — considerar suporte psicológico",
       "evidencias": [
-        "sentimento negativo=1.00"
+        "sentimento negativo=0.92"
       ]
     }
   ],
@@ -311,215 +311,365 @@
     }
   },
   "transcricao": {
-    "provider": "Whisper local (fallback)",
-    "language": "pt",
+    "provider": "Azure Speech to Text",
+    "language": "pt-BR",
     "text": "Doutora, eu estou com muita falta de ar. Não consigo terminar as frases. Sinto um aperto e uma dor no peito quando respiro. Piorou muito desde a madrugada. Estou com medo, não consigo respirar direito.",
     "segments": [
       {
-        "text": "Doutora, eu estou com muita falta de ar. Não consigo terminar as frases. Sinto um aperto e uma dor no peito quando respiro. Piorou muito desde a madrugada. Estou com medo, não consigo respirar direito.",
-        "offset_s": 0.0
+        "text": "Doutora, eu estou com muita falta de ar.",
+        "offset_s": 0.07,
+        "duration_s": 2.08,
+        "confidence": 0.93476105
+      },
+      {
+        "text": "Não consigo terminar as frases.",
+        "offset_s": 4.59,
+        "duration_s": 1.88,
+        "confidence": 0.9083276
+      },
+      {
+        "text": "Sinto um aperto e uma dor no peito quando respiro.",
+        "offset_s": 8.94,
+        "duration_s": 2.72,
+        "confidence": 0.91050494
+      },
+      {
+        "text": "Piorou muito desde a madrugada.",
+        "offset_s": 13.47,
+        "duration_s": 1.76,
+        "confidence": 0.92699265
+      },
+      {
+        "text": "Estou com medo, não consigo respirar direito.",
+        "offset_s": 17.63,
+        "duration_s": 2.6,
+        "confidence": 0.8593331
       }
     ],
     "words": [
       {
-        "word": "Doutora,",
-        "start_s": 0.0,
-        "end_s": 0.6
+        "word": "doutora",
+        "start_s": 0.07,
+        "end_s": 0.59
       },
       {
         "word": "eu",
-        "start_s": 0.6,
-        "end_s": 0.68
+        "start_s": 0.59,
+        "end_s": 0.75
       },
       {
         "word": "estou",
-        "start_s": 0.68,
-        "end_s": 0.88
+        "start_s": 0.75,
+        "end_s": 0.99
       },
       {
         "word": "com",
-        "start_s": 0.88,
-        "end_s": 1.08
+        "start_s": 0.99,
+        "end_s": 1.11
       },
       {
         "word": "muita",
-        "start_s": 1.08,
-        "end_s": 1.34
+        "start_s": 1.11,
+        "end_s": 1.43
       },
       {
         "word": "falta",
-        "start_s": 1.34,
-        "end_s": 1.6
+        "start_s": 1.43,
+        "end_s": 1.75
       },
       {
         "word": "de",
-        "start_s": 1.6,
-        "end_s": 1.86
+        "start_s": 1.75,
+        "end_s": 1.91
       },
       {
-        "word": "ar.",
-        "start_s": 1.86,
-        "end_s": 2.52
-      },
-      {
-        "word": "Não",
-        "start_s": 4.02,
-        "end_s": 4.78
-      },
-      {
-        "word": "consigo",
-        "start_s": 4.78,
-        "end_s": 5.2
-      },
-      {
-        "word": "terminar",
-        "start_s": 5.2,
-        "end_s": 5.6
-      },
-      {
-        "word": "as",
-        "start_s": 5.6,
-        "end_s": 5.88
-      },
-      {
-        "word": "frases.",
-        "start_s": 5.88,
-        "end_s": 8.22
-      },
-      {
-        "word": "Sinto",
-        "start_s": 8.78,
-        "end_s": 9.3
-      },
-      {
-        "word": "um",
-        "start_s": 9.3,
-        "end_s": 9.42
-      },
-      {
-        "word": "aperto",
-        "start_s": 9.42,
-        "end_s": 9.84
-      },
-      {
-        "word": "e",
-        "start_s": 9.84,
-        "end_s": 9.98
-      },
-      {
-        "word": "uma",
-        "start_s": 9.98,
-        "end_s": 10.1
-      },
-      {
-        "word": "dor",
-        "start_s": 10.1,
-        "end_s": 10.32
-      },
-      {
-        "word": "no",
-        "start_s": 10.32,
-        "end_s": 10.46
-      },
-      {
-        "word": "peito",
-        "start_s": 10.46,
-        "end_s": 10.76
-      },
-      {
-        "word": "quando",
-        "start_s": 10.76,
-        "end_s": 10.96
-      },
-      {
-        "word": "respiro.",
-        "start_s": 10.96,
-        "end_s": 13.36
-      },
-      {
-        "word": "Piorou",
-        "start_s": 13.36,
-        "end_s": 13.76
-      },
-      {
-        "word": "muito",
-        "start_s": 13.76,
-        "end_s": 13.98
-      },
-      {
-        "word": "desde",
-        "start_s": 13.98,
-        "end_s": 14.3
-      },
-      {
-        "word": "a",
-        "start_s": 14.3,
-        "end_s": 14.46
-      },
-      {
-        "word": "madrugada.",
-        "start_s": 14.46,
-        "end_s": 17.02
-      },
-      {
-        "word": "Estou",
-        "start_s": 17.42,
-        "end_s": 17.9
-      },
-      {
-        "word": "com",
-        "start_s": 17.9,
-        "end_s": 18.02
-      },
-      {
-        "word": "medo,",
-        "start_s": 18.02,
-        "end_s": 18.58
+        "word": "ar",
+        "start_s": 1.91,
+        "end_s": 2.15
       },
       {
         "word": "não",
-        "start_s": 18.58,
-        "end_s": 18.7
+        "start_s": 4.59,
+        "end_s": 4.87
       },
       {
         "word": "consigo",
-        "start_s": 18.7,
-        "end_s": 19.1
+        "start_s": 4.87,
+        "end_s": 5.35
+      },
+      {
+        "word": "terminar",
+        "start_s": 5.35,
+        "end_s": 5.79
+      },
+      {
+        "word": "as",
+        "start_s": 5.79,
+        "end_s": 5.95
+      },
+      {
+        "word": "frases",
+        "start_s": 5.95,
+        "end_s": 6.47
+      },
+      {
+        "word": "sinto",
+        "start_s": 8.94,
+        "end_s": 9.38
+      },
+      {
+        "word": "um",
+        "start_s": 9.38,
+        "end_s": 9.46
+      },
+      {
+        "word": "aperto",
+        "start_s": 9.46,
+        "end_s": 9.94
+      },
+      {
+        "word": "e",
+        "start_s": 9.94,
+        "end_s": 10.02
+      },
+      {
+        "word": "uma",
+        "start_s": 10.02,
+        "end_s": 10.22
+      },
+      {
+        "word": "dor",
+        "start_s": 10.22,
+        "end_s": 10.42
+      },
+      {
+        "word": "no",
+        "start_s": 10.42,
+        "end_s": 10.54
+      },
+      {
+        "word": "peito",
+        "start_s": 10.54,
+        "end_s": 10.86
+      },
+      {
+        "word": "quando",
+        "start_s": 10.86,
+        "end_s": 11.1
+      },
+      {
+        "word": "respiro",
+        "start_s": 11.1,
+        "end_s": 11.66
+      },
+      {
+        "word": "piorou",
+        "start_s": 13.47,
+        "end_s": 13.83
+      },
+      {
+        "word": "muito",
+        "start_s": 13.83,
+        "end_s": 14.19
+      },
+      {
+        "word": "desde",
+        "start_s": 14.19,
+        "end_s": 14.47
+      },
+      {
+        "word": "a",
+        "start_s": 14.47,
+        "end_s": 14.51
+      },
+      {
+        "word": "madrugada",
+        "start_s": 14.51,
+        "end_s": 15.23
+      },
+      {
+        "word": "estou",
+        "start_s": 17.63,
+        "end_s": 17.95
+      },
+      {
+        "word": "com",
+        "start_s": 17.95,
+        "end_s": 18.11
+      },
+      {
+        "word": "medo",
+        "start_s": 18.11,
+        "end_s": 18.51
+      },
+      {
+        "word": "não",
+        "start_s": 18.55,
+        "end_s": 18.79
+      },
+      {
+        "word": "consigo",
+        "start_s": 18.79,
+        "end_s": 19.23
       },
       {
         "word": "respirar",
-        "start_s": 19.1,
-        "end_s": 19.62
+        "start_s": 19.23,
+        "end_s": 19.71
       },
       {
-        "word": "direito.",
-        "start_s": 19.62,
-        "end_s": 21.0
+        "word": "direito",
+        "start_s": 19.71,
+        "end_s": 20.23
       }
     ],
-    "latency_s": 4.12,
+    "latency_s": 7.96,
     "errors": [],
     "ritmo_transcricao": {
-      "palavras_por_min": 100.0,
-      "pausas_entre_palavras_>=0.5s": 2,
-      "pausa_max_s": 1.5
+      "palavras_por_min": 104.2,
+      "pausas_entre_palavras_>=0.5s": 4,
+      "pausa_max_s": 2.47
     }
   },
   "nlp": {
-    "provider": "Léxico local (fallback)",
+    "provider": "Azure AI Language (Text Analytics)",
+    "errors": [],
     "sentimento": {
       "geral": "negative",
       "scores": {
         "positivo": 0.0,
-        "neutro": 0.0,
-        "negativo": 1.0
+        "neutro": 0.08,
+        "negativo": 0.92
       },
-      "frases": []
+      "frases": [
+        {
+          "texto": "Doutora, eu estou com muita falta de ar. ",
+          "sentimento": "negative",
+          "negativo": 0.95,
+          "opinioes": []
+        },
+        {
+          "texto": "Não consigo terminar as frases. ",
+          "sentimento": "negative",
+          "negativo": 0.66,
+          "opinioes": []
+        },
+        {
+          "texto": "Sinto um aperto e uma dor no peito quando respiro. ",
+          "sentimento": "negative",
+          "negativo": 0.99,
+          "opinioes": []
+        },
+        {
+          "texto": "Piorou muito desde a madrugada. ",
+          "sentimento": "negative",
+          "negativo": 1.0,
+          "opinioes": []
+        },
+        {
+          "texto": "Estou com medo, não consigo respirar direito.",
+          "sentimento": "negative",
+          "negativo": 1.0,
+          "opinioes": []
+        }
+      ]
     },
-    "frases_chave": [],
-    "entidades_saude": [],
-    "errors": [],
-    "latency_s": 0.0,
+    "frases_chave": [
+      "muita falta",
+      "Doutora",
+      "ar",
+      "frases",
+      "aperto",
+      "dor",
+      "peito",
+      "madrugada",
+      "medo"
+    ],
+    "entidades_saude": [
+      {
+        "texto": "muita",
+        "categoria": "ConditionQualifier",
+        "confianca": 0.74,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "falta de ar",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": false,
+        "links": [
+          "UMLS:C0013404",
+          "AOD:0000005442",
+          "BI:BI00182"
+        ]
+      },
+      {
+        "texto": "consigo terminar as frases",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.91,
+        "negado": true,
+        "links": []
+      },
+      {
+        "texto": "aperto",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "dor no peito",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.88,
+        "negado": false,
+        "links": [
+          "UMLS:C0008031",
+          "BI:BI00012",
+          "CCPSS:1017850"
+        ]
+      },
+      {
+        "texto": "Piorou",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "muito",
+        "categoria": "ConditionQualifier",
+        "confianca": 0.69,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "madrugada",
+        "categoria": "Time",
+        "confianca": 0.99,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "medo",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.91,
+        "negado": false,
+        "links": [
+          "UMLS:C0015726",
+          "AOD:0000003778",
+          "CCC:P41.0"
+        ]
+      },
+      {
+        "texto": "consigo respirar direito",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.89,
+        "negado": true,
+        "links": []
+      }
+    ],
+    "latency_s": 6.12,
     "termos_criticos": [
       {
         "termo": "falta de ar",
@@ -543,6 +693,12 @@
       }
     ]
   },
-  "sintomas_azure_health": [],
-  "tempo_processamento_s": 4.8
+  "sintomas_azure_health": [
+    "falta de ar",
+    "aperto",
+    "dor no peito",
+    "Piorou",
+    "medo"
+  ],
+  "tempo_processamento_s": 14.8
 }

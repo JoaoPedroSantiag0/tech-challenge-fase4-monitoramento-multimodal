@@ -135,9 +135,15 @@ Sem credenciais Azure, o sistema usa Whisper-small e o léxico local como fallba
 | Controle | 0,00 | 0,01 | 0,00 | fala | **Normal** |
 | Fadiga | **0,77** | 0,02 | 0,18 | fala | **ALTO**: fadiga (voz + "cansado", "fraqueza", "esgotamento") |
 | Dispneia | 0,12 | **0,70** | 0,07 | arquejo 0,47 · pigarro 0,63 · tosse 0,14 | **CRÍTICO**: desconforto respiratório + dor torácica |
-| Disartria | 0,31 | 0,02 | **0,56** | fala | **CRÍTICO**: suspeita de AVC (perda de 98% da energia de consoantes + "fala enrolada", "braço fraco", "boca torta") |
+| Disartria | 0,31 | 0,02 | **0,56** | fala | **CRÍTICO**: suspeita de AVC (perda de 98% da energia de consoantes + "braço direito está fraco", "tonturas") |
 
-As 4 consultas foram classificadas corretamente. Uma observação: a fala disártrica degradou a própria transcrição ("formigando" virou "me ligando"). Isso mostra por que os biomarcadores acústicos complementam a análise do texto.
+As 4 consultas foram classificadas corretamente, com transcrição e análise de texto feitas pelo Azure.
+
+**Achado importante.** A fala disártrica degradou a própria transcrição do Azure Speech:
+- "fala enrolada" virou "**sala** enrolada";
+- "boca meio torta" virou "**bolsa está muito alta**".
+
+Mesmo assim o caso foi classificado como CRÍTICO, por duas razões: os biomarcadores acústicos detectaram a disartria de forma independente do texto, e o trecho "braço direito está fraco" foi transcrito corretamente. Ou seja, quanto pior a fala, menos se pode confiar só na transcrição, e é aí que a fusão acústico + semântico se justifica.
 
 ### 3.3 Sinais vitais: avaliação com eventos injetados
 
@@ -193,7 +199,18 @@ Em UTI, o NEWS2 isolado fica ≥ 5 em 25% do tempo, o que gera fadiga de alarmes
 | Azure AI Speech: Speech to Text | `src/audio/azure_speech.py` | `AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, idioma `pt-BR` |
 | Azure AI Language: Sentimento, Key Phrases, Text Analytics for Health | `src/audio/azure_text.py` | `AZURE_LANGUAGE_KEY`, `AZURE_LANGUAGE_ENDPOINT` |
 
-As credenciais ficam no `.env`, que nunca é versionado (veja `.env.example`). O status de cada serviço aparece na Central de Alertas e no relatório HTML, e cada resultado registra o provedor usado.
+As credenciais ficam no `.env`, que nunca é versionado (veja `.env.example`). Para validar a configuração: `python -m scripts.check_azure`. O status de cada serviço aparece na Central de Alertas e no relatório HTML, e cada resultado registra o provedor usado.
+
+**Resultados com Azure**, recursos em **Brazil South**, plano gratuito F0. A conta Azure for Students restringe as regiões permitidas por política.
+
+| Consulta | Speech to Text (latência) | Sentimento | Entidades de saúde (exemplos, com vínculo UMLS) |
+|---|---|---|---|
+| Controle | 5,7 s | misto | "sentindo bem melhor", "fisioterapeuta" (profissão) |
+| Fadiga | 11,1 s | negativo | "cansado", "fraqueza" (UMLS C3714552); "não tenho forças nem para levantar da cama" detectado como **negado** |
+| Dispneia | 8,0 s | negativo (0,92) | "falta de ar" (**UMLS C0013404**, dispneia), "dor no peito" (**UMLS C0008031**, dor torácica), "aperto" |
+| Disartria | 7,7 s | negativo | "braço" (estrutura corporal), "fraco" (sintoma), "tonturas" |
+
+O Text Analytics levou ~6 s por consulta (sentimento + frases-chave + Health, este último assíncrono).
 
 **Evolução para produção:**
 - Azure IoT Hub/Event Hubs para os monitores;

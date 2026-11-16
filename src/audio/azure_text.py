@@ -92,7 +92,7 @@ def analyze_azure(text: str) -> dict:
             for e in d.entities:
                 ents.append({"texto": e.text, "categoria": e.category, "confianca": round(e.confidence_score, 3),
                              "negado": bool(e.assertion and e.assertion.certainty and "negative" in str(e.assertion.certainty)),
-                             "links": [l.id for l in (e.data_sources or [])][:3]})
+                             "links": [f"{l.name}:{l.entity_id}" for l in (e.data_sources or [])][:3]})
         out["entidades_saude"] = ents
     except Exception as exc:
         out["errors"].append(f"health: {exc}")

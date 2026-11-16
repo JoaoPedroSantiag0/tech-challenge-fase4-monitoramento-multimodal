@@ -354,14 +354,22 @@ def section_anomaly() -> str:
 
 def section_azure() -> str:
     az = S["azure"]
-    a = next(iter(S["audio"].values()))
+    a = S["audio"].get("caso_03_dispneia") or next(iter(S["audio"].values()))
     lat_stt = [x["transcricao"].get("latency_s") for x in S["audio"].values()]
     lat_nlp = [x["nlp"].get("latency_s") for x in S["audio"].values()]
     ok = az["speech"] and az["language"]
     status = ("<p class='ok'>✅ Serviços Azure ativos nesta execução"
               + (f" (região <b>{esc(az['regiao_speech'])}</b>)" if az.get("regiao_speech") else "") + ".</p>") if ok else \
         "<p class='warn'>⚠️ Esta execução usou o fallback local (Whisper + léxico) porque as chaves Azure não estavam configuradas. Preencha o <code>.env</code> e rode o pipeline novamente.</p>"
-    sample = json.dumps({k: a["nlp"].get(k) for k in ("sentimento", "frases_chave") if a["nlp"].get(k)}, ensure_ascii=False, indent=1)[:1100]
+    sent = a["nlp"].get("sentimento", {})
+    sample = json.dumps({
+        "transcricao (Speech to Text)": a["transcricao"]["text"][:120] + "...",
+        "sentimento": {"geral": sent.get("geral"), "scores": {k: round(v, 2) for k, v in sent.get("scores", {}).items()}},
+        "frases_chave": a["nlp"].get("frases_chave"),
+        "entidades_saude (Text Analytics for Health)": [
+            {"texto": e["texto"], "categoria": e["categoria"], "negado": e["negado"], "links": e["links"][:1]}
+            for e in a["nlp"].get("entidades_saude", []) if e["categoria"] in ("SymptomOrSign", "Diagnosis")][:5],
+    }, ensure_ascii=False, indent=1)
     return f"""
 <div class="grid2">
   <div class="card">
@@ -376,7 +384,7 @@ def section_azure() -> str:
     <p class="foot">Credenciais via <code>.env</code> (nunca versionado). Arquivos: <code>src/audio/azure_speech.py</code> e <code>src/audio/azure_text.py</code>.
     Sem chaves, o sistema degrada para Whisper e léxico locais e marca o provedor em cada resultado.</p>
   </div>
-  <div class="card"><h4>Exemplo de resposta (Text Analytics)</h4><pre>{esc(sample)}</pre></div>
+  <div class="card"><h4>Resposta real do Azure: consulta com dispneia</h4><pre>{esc(sample)}</pre></div>
 </div>"""
 
 
@@ -443,7 +451,7 @@ def section_results() -> str:
 <div class="grid2">
   <div class="card"><h4>Exemplos de anomalias detectadas</h4><ul class="ev">
     <li>{sev_badge('CRITICO')} <b>Queda</b> com permanência no piso, detectada por OpenPose + YOLOv8 (Leito 01, à noite). Ocorreu horas depois de o áudio registrar fadiga e os vitais mostrarem NEWS2 crescente.</li>
-    <li>{sev_badge('CRITICO')} <b>Suspeita de AVC</b>: disartria na voz + "fala enrolada", "braço fraco", "boca torta" (Leito 03), junto com pico hipertensivo (PAS {sbp3}).</li>
+    <li>{sev_badge('CRITICO')} <b>Suspeita de AVC</b>: disartria detectada na voz + "braço direito está fraco" (Leito 03), junto com pico hipertensivo (PAS {sbp3}). A fala arrastada fez o próprio Azure transcrever "fala enrolada" como "sala enrolada", e mesmo assim os biomarcadores acústicos sustentaram o alerta.</li>
     <li>{sev_badge('CRITICO')} <b>Dispneia com dor torácica</b>: arquejo/tosse detectados pelo AudioSet + "falta de ar" e "dor no peito", 30 min antes da menor SpO₂ do paciente (Leito 02).</li>
     <li>{sev_badge('ALTO')} <b>Escalonamento de opioide/vasopressor</b> ×4 ou mais em prescrições reais do MIMIC-IV.</li>
     <li>{sev_badge('ATENCAO')} <b>Paciente acamado sem mudança de decúbito</b> por mais de 3h (risco de lesão por pressão).</li>

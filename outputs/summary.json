@@ -1,9 +1,9 @@
 {
-  "gerado_em": "2026-11-16T10:41:47",
+  "gerado_em": "2026-11-16T11:58:30",
   "azure": {
-    "speech": false,
-    "language": false,
-    "regiao_speech": null
+    "speech": true,
+    "language": true,
+    "regiao_speech": "brazilsouth"
   },
   "video": {
     "treino": {
@@ -299,249 +299,382 @@
         "hnr_db": 10.9527
       },
       "transcricao": {
-        "provider": "Whisper local (fallback)",
-        "language": "pt",
-        "text": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi à noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e adoro no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
+        "provider": "Azure Speech to Text",
+        "language": "pt-BR",
+        "text": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e a dor no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
         "segments": [
           {
-            "text": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi à noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e adoro no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
-            "offset_s": 0.0
+            "text": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e a dor no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
+            "offset_s": 0.07,
+            "duration_s": 15.4,
+            "confidence": 0.9022817
           }
         ],
         "words": [
           {
-            "word": "Bom",
-            "start_s": 0.0,
-            "end_s": 0.24
+            "word": "bom",
+            "start_s": 0.07,
+            "end_s": 0.35
           },
           {
-            "word": "dia,",
-            "start_s": 0.24,
-            "end_s": 0.88
+            "word": "dia",
+            "start_s": 0.35,
+            "end_s": 0.79
           },
           {
-            "word": "doutor.",
-            "start_s": 0.88,
-            "end_s": 1.88
+            "word": "doutor",
+            "start_s": 0.79,
+            "end_s": 1.47
           },
           {
-            "word": "Hoje",
-            "start_s": 1.88,
-            "end_s": 2.2
+            "word": "hoje",
+            "start_s": 1.91,
+            "end_s": 2.31
           },
           {
             "word": "eu",
-            "start_s": 2.2,
-            "end_s": 2.34
+            "start_s": 2.31,
+            "end_s": 2.39
           },
           {
             "word": "estou",
-            "start_s": 2.34,
-            "end_s": 2.54
+            "start_s": 2.39,
+            "end_s": 2.63
           },
           {
             "word": "me",
-            "start_s": 2.54,
-            "end_s": 2.7
+            "start_s": 2.63,
+            "end_s": 2.75
           },
           {
             "word": "sentindo",
-            "start_s": 2.7,
-            "end_s": 3.22
+            "start_s": 2.75,
+            "end_s": 3.35
           },
           {
             "word": "bem",
-            "start_s": 3.22,
-            "end_s": 3.48
+            "start_s": 3.35,
+            "end_s": 3.55
           },
           {
-            "word": "melhor.",
-            "start_s": 3.48,
-            "end_s": 4.44
+            "word": "melhor",
+            "start_s": 3.55,
+            "end_s": 4.03
           },
           {
-            "word": "Dormi",
-            "start_s": 4.44,
-            "end_s": 4.84
-          },
-          {
-            "word": "à",
-            "start_s": 4.84,
-            "end_s": 4.96
-          },
-          {
-            "word": "noite",
-            "start_s": 4.96,
-            "end_s": 5.18
-          },
-          {
-            "word": "toda",
-            "start_s": 5.18,
-            "end_s": 5.56
-          },
-          {
-            "word": "e",
-            "start_s": 5.56,
-            "end_s": 5.74
-          },
-          {
-            "word": "consegui",
-            "start_s": 5.74,
-            "end_s": 6.12
-          },
-          {
-            "word": "caminhar",
-            "start_s": 6.12,
-            "end_s": 6.5
-          },
-          {
-            "word": "no",
-            "start_s": 6.5,
-            "end_s": 6.68
-          },
-          {
-            "word": "corredor",
-            "start_s": 6.68,
-            "end_s": 7.12
-          },
-          {
-            "word": "com",
-            "start_s": 7.12,
-            "end_s": 7.3
+            "word": "dormi",
+            "start_s": 4.47,
+            "end_s": 4.87
           },
           {
             "word": "a",
-            "start_s": 7.3,
-            "end_s": 7.42
+            "start_s": 4.87,
+            "end_s": 4.99
           },
           {
-            "word": "fisioterapeuta.",
-            "start_s": 7.42,
-            "end_s": 8.8
+            "word": "noite",
+            "start_s": 4.99,
+            "end_s": 5.39
           },
           {
-            "word": "Estou",
-            "start_s": 8.8,
-            "end_s": 9.18
-          },
-          {
-            "word": "me",
-            "start_s": 9.18,
-            "end_s": 9.3
-          },
-          {
-            "word": "alimentando",
-            "start_s": 9.3,
-            "end_s": 9.8
-          },
-          {
-            "word": "normalmente",
-            "start_s": 9.8,
-            "end_s": 10.24
+            "word": "toda",
+            "start_s": 5.39,
+            "end_s": 5.71
           },
           {
             "word": "e",
-            "start_s": 10.24,
-            "end_s": 10.64
+            "start_s": 5.71,
+            "end_s": 5.75
           },
           {
-            "word": "adoro",
-            "start_s": 10.64,
-            "end_s": 10.9
+            "word": "consegui",
+            "start_s": 5.75,
+            "end_s": 6.15
+          },
+          {
+            "word": "caminhar",
+            "start_s": 6.15,
+            "end_s": 6.63
           },
           {
             "word": "no",
-            "start_s": 10.9,
-            "end_s": 11.1
+            "start_s": 6.63,
+            "end_s": 6.75
           },
           {
-            "word": "joelho",
-            "start_s": 11.14,
-            "end_s": 11.46
+            "word": "corredor",
+            "start_s": 6.75,
+            "end_s": 7.23
           },
           {
-            "word": "diminuiu",
-            "start_s": 11.46,
-            "end_s": 12.0
+            "word": "com",
+            "start_s": 7.23,
+            "end_s": 7.39
           },
           {
-            "word": "bastante.",
-            "start_s": 12.0,
-            "end_s": 13.08
+            "word": "a",
+            "start_s": 7.39,
+            "end_s": 7.43
           },
           {
-            "word": "Acho",
-            "start_s": 13.08,
-            "end_s": 13.44
-          },
-          {
-            "word": "que",
-            "start_s": 13.44,
-            "end_s": 13.62
-          },
-          {
-            "word": "já",
-            "start_s": 13.62,
-            "end_s": 13.76
+            "word": "fisioterapeuta",
+            "start_s": 7.43,
+            "end_s": 8.39
           },
           {
             "word": "estou",
-            "start_s": 13.76,
-            "end_s": 13.96
+            "start_s": 8.71,
+            "end_s": 9.23
+          },
+          {
+            "word": "me",
+            "start_s": 9.23,
+            "end_s": 9.35
+          },
+          {
+            "word": "alimentando",
+            "start_s": 9.35,
+            "end_s": 9.91
+          },
+          {
+            "word": "normalmente",
+            "start_s": 9.91,
+            "end_s": 10.59
+          },
+          {
+            "word": "e",
+            "start_s": 10.59,
+            "end_s": 10.63
+          },
+          {
+            "word": "a",
+            "start_s": 10.63,
+            "end_s": 10.75
+          },
+          {
+            "word": "dor",
+            "start_s": 10.75,
+            "end_s": 11.03
+          },
+          {
+            "word": "no",
+            "start_s": 11.03,
+            "end_s": 11.15
+          },
+          {
+            "word": "joelho",
+            "start_s": 11.15,
+            "end_s": 11.55
+          },
+          {
+            "word": "diminuiu",
+            "start_s": 11.55,
+            "end_s": 12.03
+          },
+          {
+            "word": "bastante",
+            "start_s": 12.03,
+            "end_s": 12.71
+          },
+          {
+            "word": "acho",
+            "start_s": 13.15,
+            "end_s": 13.55
+          },
+          {
+            "word": "que",
+            "start_s": 13.55,
+            "end_s": 13.67
+          },
+          {
+            "word": "já",
+            "start_s": 13.67,
+            "end_s": 13.79
+          },
+          {
+            "word": "estou",
+            "start_s": 13.79,
+            "end_s": 14.07
           },
           {
             "word": "pronto",
-            "start_s": 13.96,
-            "end_s": 14.32
+            "start_s": 14.07,
+            "end_s": 14.43
           },
           {
             "word": "para",
-            "start_s": 14.32,
-            "end_s": 14.58
+            "start_s": 14.43,
+            "end_s": 14.67
           },
           {
             "word": "ir",
-            "start_s": 14.58,
-            "end_s": 14.78
+            "start_s": 14.67,
+            "end_s": 14.83
           },
           {
             "word": "para",
-            "start_s": 14.78,
-            "end_s": 14.96
+            "start_s": 14.83,
+            "end_s": 15.07
           },
           {
-            "word": "casa.",
-            "start_s": 14.96,
-            "end_s": 15.96
+            "word": "casa",
+            "start_s": 15.07,
+            "end_s": 15.47
           }
         ],
-        "latency_s": 5.14,
+        "latency_s": 5.69,
         "errors": [],
         "ritmo_transcricao": {
-          "palavras_por_min": 154.1,
+          "palavras_por_min": 163.6,
           "pausas_entre_palavras_>=0.5s": 0,
-          "pausa_max_s": 0.04
+          "pausa_max_s": 0.44
         }
       },
       "nlp": {
-        "provider": "Léxico local (fallback)",
-        "sentimento": {
-          "geral": "positive",
-          "scores": {
-            "positivo": 0.6666666666666666,
-            "neutro": 0.0,
-            "negativo": 0.3333333333333333
-          },
-          "frases": []
-        },
-        "frases_chave": [],
-        "entidades_saude": [],
+        "provider": "Azure AI Language (Text Analytics)",
         "errors": [],
-        "latency_s": 0.0,
+        "sentimento": {
+          "geral": "mixed",
+          "scores": {
+            "positivo": 0.66,
+            "neutro": 0.01,
+            "negativo": 0.33
+          },
+          "frases": [
+            {
+              "texto": "Bom dia, doutor. ",
+              "sentimento": "positive",
+              "negativo": 0.0,
+              "opinioes": []
+            },
+            {
+              "texto": "Hoje eu estou me sentindo bem melhor. ",
+              "sentimento": "positive",
+              "negativo": 0.0,
+              "opinioes": []
+            },
+            {
+              "texto": "Dormi a noite toda e consegui caminhar no corredor com a fisioterapeuta. ",
+              "sentimento": "neutral",
+              "negativo": 0.01,
+              "opinioes": []
+            },
+            {
+              "texto": "Estou me alimentando normalmente e a dor no joelho diminuiu bastante. ",
+              "sentimento": "negative",
+              "negativo": 0.99,
+              "opinioes": [
+                {
+                  "alvo": "dor",
+                  "sentimento": "positive",
+                  "avaliacoes": [
+                    "diminuiu"
+                  ]
+                }
+              ]
+            },
+            {
+              "texto": "Acho que já estou pronto para ir para casa.",
+              "sentimento": "neutral",
+              "negativo": 0.01,
+              "opinioes": []
+            }
+          ]
+        },
+        "frases_chave": [
+          "Bom dia",
+          "doutor",
+          "corredor",
+          "fisioterapeuta",
+          "joelho",
+          "casa"
+        ],
+        "entidades_saude": [
+          {
+            "texto": "doutor",
+            "categoria": "HealthcareProfession",
+            "confianca": 0.79,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "Hoje",
+            "categoria": "Time",
+            "confianca": 0.97,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "sentindo bem melhor",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.94,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "Dormi",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.96,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "noite toda",
+            "categoria": "Time",
+            "confianca": 0.9,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "fisioterapeuta",
+            "categoria": "HealthcareProfession",
+            "confianca": 0.99,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "me alimentando normalmente",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.78,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "dor no",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.77,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "joelho",
+            "categoria": "BodyStructure",
+            "confianca": 0.79,
+            "negado": false,
+            "links": [
+              "UMLS:C0022742",
+              "AOD:0000008182",
+              "CCPSS:1005647"
+            ]
+          },
+          {
+            "texto": "diminuiu bastante",
+            "categoria": "Course",
+            "confianca": 0.95,
+            "negado": false,
+            "links": []
+          }
+        ],
+        "latency_s": 6.44,
         "termos_criticos": []
       },
-      "sintomas_azure_health": [],
-      "tempo_processamento_s": 10.4,
+      "sintomas_azure_health": [
+        "sentindo bem melhor",
+        "Dormi",
+        "me alimentando normalmente",
+        "dor no"
+      ],
+      "tempo_processamento_s": 17.6,
       "audioset_max": {
         "Breathing": 0.001,
         "Wheeze": 0.0,
@@ -616,225 +749,376 @@
         "hnr_db": 13.7591
       },
       "transcricao": {
-        "provider": "Whisper local (fallback)",
-        "language": "pt",
-        "text": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Duermo o dia inteiro, mas a cor do exausto. Estou sem vontade de comer.",
+        "provider": "Azure Speech to Text",
+        "language": "pt-BR",
+        "text": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Durmo o dia inteiro, mas acordo exausto. Estou sem vontade de comer.",
         "segments": [
           {
-            "text": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Duermo o dia inteiro, mas a cor do exausto. Estou sem vontade de comer.",
-            "offset_s": 0.0
+            "text": "Doutor, eu estou muito cansado.",
+            "offset_s": 0.07,
+            "duration_s": 3.44,
+            "confidence": 0.8786018
+          },
+          {
+            "text": "Desde ontem não tenho forças nem para levantar da cama.",
+            "offset_s": 5.19,
+            "duration_s": 4.76,
+            "confidence": 0.89561176
+          },
+          {
+            "text": "Sinto uma fraqueza no corpo todo, um esgotamento.",
+            "offset_s": 11.52,
+            "duration_s": 4.76,
+            "confidence": 0.84985256
+          },
+          {
+            "text": "Durmo o dia inteiro, mas acordo exausto.",
+            "offset_s": 17.83,
+            "duration_s": 3.88,
+            "confidence": 0.7803929
+          },
+          {
+            "text": "Estou sem vontade de comer.",
+            "offset_s": 23.31,
+            "duration_s": 2.6,
+            "confidence": 0.8228678
           }
         ],
         "words": [
           {
-            "word": "Doutor,",
-            "start_s": 0.0,
-            "end_s": 1.3
+            "word": "doutor",
+            "start_s": 0.07,
+            "end_s": 0.99
           },
           {
             "word": "eu",
-            "start_s": 1.3,
-            "end_s": 1.52
+            "start_s": 1.31,
+            "end_s": 1.59
           },
           {
             "word": "estou",
-            "start_s": 1.52,
-            "end_s": 1.86
+            "start_s": 1.59,
+            "end_s": 1.95
           },
           {
             "word": "muito",
-            "start_s": 1.86,
-            "end_s": 2.44
+            "start_s": 1.95,
+            "end_s": 2.67
           },
           {
-            "word": "cansado.",
-            "start_s": 2.44,
-            "end_s": 4.8
+            "word": "cansado",
+            "start_s": 2.67,
+            "end_s": 3.51
           },
           {
-            "word": "Desde",
-            "start_s": 5.18,
-            "end_s": 5.56
+            "word": "desde",
+            "start_s": 5.19,
+            "end_s": 5.95
           },
           {
             "word": "ontem",
-            "start_s": 5.56,
-            "end_s": 6.34
+            "start_s": 5.95,
+            "end_s": 6.43
           },
           {
             "word": "não",
-            "start_s": 6.34,
-            "end_s": 6.54
+            "start_s": 6.43,
+            "end_s": 6.71
           },
           {
             "word": "tenho",
-            "start_s": 6.54,
-            "end_s": 6.9
+            "start_s": 6.71,
+            "end_s": 7.39
           },
           {
             "word": "forças",
-            "start_s": 6.9,
-            "end_s": 7.62
+            "start_s": 7.39,
+            "end_s": 7.83
           },
           {
             "word": "nem",
-            "start_s": 7.62,
-            "end_s": 7.98
+            "start_s": 7.83,
+            "end_s": 8.15
           },
           {
             "word": "para",
-            "start_s": 7.98,
-            "end_s": 8.32
+            "start_s": 8.15,
+            "end_s": 8.43
           },
           {
             "word": "levantar",
-            "start_s": 8.32,
-            "end_s": 9.1
+            "start_s": 8.43,
+            "end_s": 9.19
           },
           {
             "word": "da",
-            "start_s": 9.1,
-            "end_s": 9.28
+            "start_s": 9.19,
+            "end_s": 9.39
           },
           {
-            "word": "cama.",
-            "start_s": 9.28,
-            "end_s": 11.1
+            "word": "cama",
+            "start_s": 9.43,
+            "end_s": 9.95
           },
           {
-            "word": "Sinto",
-            "start_s": 11.5,
-            "end_s": 12.06
+            "word": "sinto",
+            "start_s": 11.52,
+            "end_s": 12.2
           },
           {
             "word": "uma",
-            "start_s": 12.06,
-            "end_s": 12.36
+            "start_s": 12.2,
+            "end_s": 12.48
           },
           {
             "word": "fraqueza",
-            "start_s": 12.36,
-            "end_s": 13.14
+            "start_s": 12.48,
+            "end_s": 13.28
           },
           {
             "word": "no",
-            "start_s": 13.14,
-            "end_s": 13.32
+            "start_s": 13.28,
+            "end_s": 13.44
           },
           {
             "word": "corpo",
-            "start_s": 13.32,
-            "end_s": 13.8
+            "start_s": 13.44,
+            "end_s": 14.28
           },
           {
-            "word": "todo,",
-            "start_s": 13.8,
-            "end_s": 14.76
+            "word": "todo",
+            "start_s": 14.28,
+            "end_s": 14.64
           },
           {
             "word": "um",
-            "start_s": 14.76,
-            "end_s": 15.02
+            "start_s": 14.84,
+            "end_s": 15.12
           },
           {
-            "word": "esgotamento.",
-            "start_s": 15.02,
-            "end_s": 17.06
+            "word": "esgotamento",
+            "start_s": 15.12,
+            "end_s": 16.28
           },
           {
-            "word": "Duermo",
-            "start_s": 17.74,
-            "end_s": 18.4
+            "word": "durmo",
+            "start_s": 17.83,
+            "end_s": 18.51
           },
           {
             "word": "o",
-            "start_s": 18.4,
-            "end_s": 18.68
+            "start_s": 18.51,
+            "end_s": 18.63
           },
           {
             "word": "dia",
-            "start_s": 18.68,
-            "end_s": 18.82
+            "start_s": 18.63,
+            "end_s": 18.87
           },
           {
-            "word": "inteiro,",
-            "start_s": 18.82,
-            "end_s": 19.88
+            "word": "inteiro",
+            "start_s": 18.87,
+            "end_s": 19.67
           },
           {
             "word": "mas",
-            "start_s": 19.88,
-            "end_s": 20.22
+            "start_s": 19.91,
+            "end_s": 20.35
           },
           {
-            "word": "a",
-            "start_s": 20.22,
-            "end_s": 20.44
+            "word": "acordo",
+            "start_s": 20.35,
+            "end_s": 20.99
           },
           {
-            "word": "cor",
-            "start_s": 20.44,
-            "end_s": 20.72
+            "word": "exausto",
+            "start_s": 20.99,
+            "end_s": 21.71
           },
           {
-            "word": "do",
-            "start_s": 20.72,
-            "end_s": 20.92
-          },
-          {
-            "word": "exausto.",
-            "start_s": 20.92,
-            "end_s": 22.18
-          },
-          {
-            "word": "Estou",
-            "start_s": 23.28,
-            "end_s": 23.78
+            "word": "estou",
+            "start_s": 23.31,
+            "end_s": 23.95
           },
           {
             "word": "sem",
-            "start_s": 23.78,
-            "end_s": 24.16
+            "start_s": 23.95,
+            "end_s": 24.27
           },
           {
             "word": "vontade",
-            "start_s": 24.16,
-            "end_s": 24.76
+            "start_s": 24.27,
+            "end_s": 25.15
           },
           {
             "word": "de",
-            "start_s": 24.76,
-            "end_s": 25.2
+            "start_s": 25.15,
+            "end_s": 25.31
           },
           {
-            "word": "comer.",
-            "start_s": 25.2,
-            "end_s": 27.44
+            "word": "comer",
+            "start_s": 25.31,
+            "end_s": 25.91
           }
         ],
-        "latency_s": 4.11,
+        "latency_s": 11.09,
         "errors": [],
         "ritmo_transcricao": {
-          "palavras_por_min": 80.9,
-          "pausas_entre_palavras_>=0.5s": 2,
-          "pausa_max_s": 1.1
+          "palavras_por_min": 81.3,
+          "pausas_entre_palavras_>=0.5s": 4,
+          "pausa_max_s": 1.68
         }
       },
       "nlp": {
-        "provider": "Léxico local (fallback)",
+        "provider": "Azure AI Language (Text Analytics)",
+        "errors": [],
         "sentimento": {
           "geral": "negative",
           "scores": {
-            "positivo": 0.0,
-            "neutro": 0.0,
-            "negativo": 1.0
+            "positivo": 0.01,
+            "neutro": 0.19,
+            "negativo": 0.8
           },
-          "frases": []
+          "frases": [
+            {
+              "texto": "Doutor, eu estou muito cansado. ",
+              "sentimento": "negative",
+              "negativo": 1.0,
+              "opinioes": []
+            },
+            {
+              "texto": "Desde ontem não tenho forças nem para levantar da cama. ",
+              "sentimento": "negative",
+              "negativo": 0.76,
+              "opinioes": []
+            },
+            {
+              "texto": "Sinto uma fraqueza no corpo todo, um esgotamento. ",
+              "sentimento": "negative",
+              "negativo": 0.99,
+              "opinioes": [
+                {
+                  "alvo": "corpo",
+                  "sentimento": "negative",
+                  "avaliacoes": [
+                    "fraqueza",
+                    "esgotamento"
+                  ]
+                }
+              ]
+            },
+            {
+              "texto": "Durmo o dia inteiro, mas acordo exausto. ",
+              "sentimento": "negative",
+              "negativo": 0.5,
+              "opinioes": []
+            },
+            {
+              "texto": "Estou sem vontade de comer.",
+              "sentimento": "negative",
+              "negativo": 0.77,
+              "opinioes": []
+            }
+          ]
         },
-        "frases_chave": [],
-        "entidades_saude": [],
-        "errors": [],
-        "latency_s": 0.0,
+        "frases_chave": [
+          "forças",
+          "Doutor",
+          "ontem",
+          "cama",
+          "fraqueza",
+          "corpo",
+          "esgotamento",
+          "vontade"
+        ],
+        "entidades_saude": [
+          {
+            "texto": "muito",
+            "categoria": "ConditionQualifier",
+            "confianca": 0.77,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "cansado",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "ontem",
+            "categoria": "Time",
+            "confianca": 0.97,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "forças nem para levantar da cama",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.91,
+            "negado": true,
+            "links": []
+          },
+          {
+            "texto": "fraqueza",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": false,
+            "links": [
+              "UMLS:C3714552",
+              "BI:BI00748",
+              "CCPSS:1014560"
+            ]
+          },
+          {
+            "texto": "corpo todo",
+            "categoria": "BodyStructure",
+            "confianca": 0.7,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "esgotamento",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.97,
+            "negado": false,
+            "links": [
+              "UMLS:C0015672",
+              "AIR:FATIG",
+              "AOD:0000001768"
+            ]
+          },
+          {
+            "texto": "Durmo",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.74,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "dia",
+            "categoria": "Time",
+            "confianca": 0.97,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "acordo exausto",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.79,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "vontade de comer",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": true,
+            "links": []
+          }
+        ],
+        "latency_s": 6.06,
         "termos_criticos": [
           {
             "termo": "cansado",
@@ -863,8 +1147,14 @@
           }
         ]
       },
-      "sintomas_azure_health": [],
-      "tempo_processamento_s": 5.1,
+      "sintomas_azure_health": [
+        "cansado",
+        "fraqueza",
+        "esgotamento",
+        "Durmo",
+        "acordo exausto"
+      ],
+      "tempo_processamento_s": 18.2,
       "audioset_max": {
         "Breathing": 0.002,
         "Wheeze": 0.001,
@@ -898,7 +1188,7 @@
           "severidade": "INFO",
           "descricao": "Sentimento negativo intenso — considerar suporte psicológico",
           "evidencias": [
-            "sentimento negativo=1.00"
+            "sentimento negativo=0.92"
           ]
         }
       ],
@@ -943,215 +1233,365 @@
         "hnr_db": 11.6259
       },
       "transcricao": {
-        "provider": "Whisper local (fallback)",
-        "language": "pt",
+        "provider": "Azure Speech to Text",
+        "language": "pt-BR",
         "text": "Doutora, eu estou com muita falta de ar. Não consigo terminar as frases. Sinto um aperto e uma dor no peito quando respiro. Piorou muito desde a madrugada. Estou com medo, não consigo respirar direito.",
         "segments": [
           {
-            "text": "Doutora, eu estou com muita falta de ar. Não consigo terminar as frases. Sinto um aperto e uma dor no peito quando respiro. Piorou muito desde a madrugada. Estou com medo, não consigo respirar direito.",
-            "offset_s": 0.0
+            "text": "Doutora, eu estou com muita falta de ar.",
+            "offset_s": 0.07,
+            "duration_s": 2.08,
+            "confidence": 0.93476105
+          },
+          {
+            "text": "Não consigo terminar as frases.",
+            "offset_s": 4.59,
+            "duration_s": 1.88,
+            "confidence": 0.9083276
+          },
+          {
+            "text": "Sinto um aperto e uma dor no peito quando respiro.",
+            "offset_s": 8.94,
+            "duration_s": 2.72,
+            "confidence": 0.91050494
+          },
+          {
+            "text": "Piorou muito desde a madrugada.",
+            "offset_s": 13.47,
+            "duration_s": 1.76,
+            "confidence": 0.92699265
+          },
+          {
+            "text": "Estou com medo, não consigo respirar direito.",
+            "offset_s": 17.63,
+            "duration_s": 2.6,
+            "confidence": 0.8593331
           }
         ],
         "words": [
           {
-            "word": "Doutora,",
-            "start_s": 0.0,
-            "end_s": 0.6
+            "word": "doutora",
+            "start_s": 0.07,
+            "end_s": 0.59
           },
           {
             "word": "eu",
-            "start_s": 0.6,
-            "end_s": 0.68
+            "start_s": 0.59,
+            "end_s": 0.75
           },
           {
             "word": "estou",
-            "start_s": 0.68,
-            "end_s": 0.88
+            "start_s": 0.75,
+            "end_s": 0.99
           },
           {
             "word": "com",
-            "start_s": 0.88,
-            "end_s": 1.08
+            "start_s": 0.99,
+            "end_s": 1.11
           },
           {
             "word": "muita",
-            "start_s": 1.08,
-            "end_s": 1.34
+            "start_s": 1.11,
+            "end_s": 1.43
           },
           {
             "word": "falta",
-            "start_s": 1.34,
-            "end_s": 1.6
+            "start_s": 1.43,
+            "end_s": 1.75
           },
           {
             "word": "de",
-            "start_s": 1.6,
-            "end_s": 1.86
+            "start_s": 1.75,
+            "end_s": 1.91
           },
           {
-            "word": "ar.",
-            "start_s": 1.86,
-            "end_s": 2.52
-          },
-          {
-            "word": "Não",
-            "start_s": 4.02,
-            "end_s": 4.78
-          },
-          {
-            "word": "consigo",
-            "start_s": 4.78,
-            "end_s": 5.2
-          },
-          {
-            "word": "terminar",
-            "start_s": 5.2,
-            "end_s": 5.6
-          },
-          {
-            "word": "as",
-            "start_s": 5.6,
-            "end_s": 5.88
-          },
-          {
-            "word": "frases.",
-            "start_s": 5.88,
-            "end_s": 8.22
-          },
-          {
-            "word": "Sinto",
-            "start_s": 8.78,
-            "end_s": 9.3
-          },
-          {
-            "word": "um",
-            "start_s": 9.3,
-            "end_s": 9.42
-          },
-          {
-            "word": "aperto",
-            "start_s": 9.42,
-            "end_s": 9.84
-          },
-          {
-            "word": "e",
-            "start_s": 9.84,
-            "end_s": 9.98
-          },
-          {
-            "word": "uma",
-            "start_s": 9.98,
-            "end_s": 10.1
-          },
-          {
-            "word": "dor",
-            "start_s": 10.1,
-            "end_s": 10.32
-          },
-          {
-            "word": "no",
-            "start_s": 10.32,
-            "end_s": 10.46
-          },
-          {
-            "word": "peito",
-            "start_s": 10.46,
-            "end_s": 10.76
-          },
-          {
-            "word": "quando",
-            "start_s": 10.76,
-            "end_s": 10.96
-          },
-          {
-            "word": "respiro.",
-            "start_s": 10.96,
-            "end_s": 13.36
-          },
-          {
-            "word": "Piorou",
-            "start_s": 13.36,
-            "end_s": 13.76
-          },
-          {
-            "word": "muito",
-            "start_s": 13.76,
-            "end_s": 13.98
-          },
-          {
-            "word": "desde",
-            "start_s": 13.98,
-            "end_s": 14.3
-          },
-          {
-            "word": "a",
-            "start_s": 14.3,
-            "end_s": 14.46
-          },
-          {
-            "word": "madrugada.",
-            "start_s": 14.46,
-            "end_s": 17.02
-          },
-          {
-            "word": "Estou",
-            "start_s": 17.42,
-            "end_s": 17.9
-          },
-          {
-            "word": "com",
-            "start_s": 17.9,
-            "end_s": 18.02
-          },
-          {
-            "word": "medo,",
-            "start_s": 18.02,
-            "end_s": 18.58
+            "word": "ar",
+            "start_s": 1.91,
+            "end_s": 2.15
           },
           {
             "word": "não",
-            "start_s": 18.58,
-            "end_s": 18.7
+            "start_s": 4.59,
+            "end_s": 4.87
           },
           {
             "word": "consigo",
-            "start_s": 18.7,
-            "end_s": 19.1
+            "start_s": 4.87,
+            "end_s": 5.35
+          },
+          {
+            "word": "terminar",
+            "start_s": 5.35,
+            "end_s": 5.79
+          },
+          {
+            "word": "as",
+            "start_s": 5.79,
+            "end_s": 5.95
+          },
+          {
+            "word": "frases",
+            "start_s": 5.95,
+            "end_s": 6.47
+          },
+          {
+            "word": "sinto",
+            "start_s": 8.94,
+            "end_s": 9.38
+          },
+          {
+            "word": "um",
+            "start_s": 9.38,
+            "end_s": 9.46
+          },
+          {
+            "word": "aperto",
+            "start_s": 9.46,
+            "end_s": 9.94
+          },
+          {
+            "word": "e",
+            "start_s": 9.94,
+            "end_s": 10.02
+          },
+          {
+            "word": "uma",
+            "start_s": 10.02,
+            "end_s": 10.22
+          },
+          {
+            "word": "dor",
+            "start_s": 10.22,
+            "end_s": 10.42
+          },
+          {
+            "word": "no",
+            "start_s": 10.42,
+            "end_s": 10.54
+          },
+          {
+            "word": "peito",
+            "start_s": 10.54,
+            "end_s": 10.86
+          },
+          {
+            "word": "quando",
+            "start_s": 10.86,
+            "end_s": 11.1
+          },
+          {
+            "word": "respiro",
+            "start_s": 11.1,
+            "end_s": 11.66
+          },
+          {
+            "word": "piorou",
+            "start_s": 13.47,
+            "end_s": 13.83
+          },
+          {
+            "word": "muito",
+            "start_s": 13.83,
+            "end_s": 14.19
+          },
+          {
+            "word": "desde",
+            "start_s": 14.19,
+            "end_s": 14.47
+          },
+          {
+            "word": "a",
+            "start_s": 14.47,
+            "end_s": 14.51
+          },
+          {
+            "word": "madrugada",
+            "start_s": 14.51,
+            "end_s": 15.23
+          },
+          {
+            "word": "estou",
+            "start_s": 17.63,
+            "end_s": 17.95
+          },
+          {
+            "word": "com",
+            "start_s": 17.95,
+            "end_s": 18.11
+          },
+          {
+            "word": "medo",
+            "start_s": 18.11,
+            "end_s": 18.51
+          },
+          {
+            "word": "não",
+            "start_s": 18.55,
+            "end_s": 18.79
+          },
+          {
+            "word": "consigo",
+            "start_s": 18.79,
+            "end_s": 19.23
           },
           {
             "word": "respirar",
-            "start_s": 19.1,
-            "end_s": 19.62
+            "start_s": 19.23,
+            "end_s": 19.71
           },
           {
-            "word": "direito.",
-            "start_s": 19.62,
-            "end_s": 21.0
+            "word": "direito",
+            "start_s": 19.71,
+            "end_s": 20.23
           }
         ],
-        "latency_s": 4.12,
+        "latency_s": 7.96,
         "errors": [],
         "ritmo_transcricao": {
-          "palavras_por_min": 100.0,
-          "pausas_entre_palavras_>=0.5s": 2,
-          "pausa_max_s": 1.5
+          "palavras_por_min": 104.2,
+          "pausas_entre_palavras_>=0.5s": 4,
+          "pausa_max_s": 2.47
         }
       },
       "nlp": {
-        "provider": "Léxico local (fallback)",
+        "provider": "Azure AI Language (Text Analytics)",
+        "errors": [],
         "sentimento": {
           "geral": "negative",
           "scores": {
             "positivo": 0.0,
-            "neutro": 0.0,
-            "negativo": 1.0
+            "neutro": 0.08,
+            "negativo": 0.92
           },
-          "frases": []
+          "frases": [
+            {
+              "texto": "Doutora, eu estou com muita falta de ar. ",
+              "sentimento": "negative",
+              "negativo": 0.95,
+              "opinioes": []
+            },
+            {
+              "texto": "Não consigo terminar as frases. ",
+              "sentimento": "negative",
+              "negativo": 0.66,
+              "opinioes": []
+            },
+            {
+              "texto": "Sinto um aperto e uma dor no peito quando respiro. ",
+              "sentimento": "negative",
+              "negativo": 0.99,
+              "opinioes": []
+            },
+            {
+              "texto": "Piorou muito desde a madrugada. ",
+              "sentimento": "negative",
+              "negativo": 1.0,
+              "opinioes": []
+            },
+            {
+              "texto": "Estou com medo, não consigo respirar direito.",
+              "sentimento": "negative",
+              "negativo": 1.0,
+              "opinioes": []
+            }
+          ]
         },
-        "frases_chave": [],
-        "entidades_saude": [],
-        "errors": [],
-        "latency_s": 0.0,
+        "frases_chave": [
+          "muita falta",
+          "Doutora",
+          "ar",
+          "frases",
+          "aperto",
+          "dor",
+          "peito",
+          "madrugada",
+          "medo"
+        ],
+        "entidades_saude": [
+          {
+            "texto": "muita",
+            "categoria": "ConditionQualifier",
+            "confianca": 0.74,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "falta de ar",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": false,
+            "links": [
+              "UMLS:C0013404",
+              "AOD:0000005442",
+              "BI:BI00182"
+            ]
+          },
+          {
+            "texto": "consigo terminar as frases",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.91,
+            "negado": true,
+            "links": []
+          },
+          {
+            "texto": "aperto",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "dor no peito",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.88,
+            "negado": false,
+            "links": [
+              "UMLS:C0008031",
+              "BI:BI00012",
+              "CCPSS:1017850"
+            ]
+          },
+          {
+            "texto": "Piorou",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "muito",
+            "categoria": "ConditionQualifier",
+            "confianca": 0.69,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "madrugada",
+            "categoria": "Time",
+            "confianca": 0.99,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "medo",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.91,
+            "negado": false,
+            "links": [
+              "UMLS:C0015726",
+              "AOD:0000003778",
+              "CCC:P41.0"
+            ]
+          },
+          {
+            "texto": "consigo respirar direito",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.89,
+            "negado": true,
+            "links": []
+          }
+        ],
+        "latency_s": 6.12,
         "termos_criticos": [
           {
             "termo": "falta de ar",
@@ -1175,8 +1615,14 @@
           }
         ]
       },
-      "sintomas_azure_health": [],
-      "tempo_processamento_s": 4.8,
+      "sintomas_azure_health": [
+        "falta de ar",
+        "aperto",
+        "dor no peito",
+        "Piorou",
+        "medo"
+      ],
+      "tempo_processamento_s": 14.8,
       "audioset_max": {
         "Breathing": 0.021,
         "Wheeze": 0.004,
@@ -1200,9 +1646,8 @@
           "evidencias": [
             "articulação pouco nítida: energia de consoantes (>2 kHz) 98% menor",
             "articulação 14% mais lenta",
-            "relato: fala enrolada",
             "relato: braço direito está fraco",
-            "relato: tontura"
+            "relato: tonturas"
           ]
         }
       ],
@@ -1246,220 +1691,333 @@
         "hnr_db": 13.6465
       },
       "transcricao": {
-        "provider": "Whisper local (fallback)",
-        "language": "pt",
-        "text": "Eu acordei com a fala enrolada. Meu braço direito está fraco e estou me ligando. A minha boca está meio torta e eu estou com tontura. Como começou faz umas duas horas?",
+        "provider": "Azure Speech to Text",
+        "language": "pt-BR",
+        "text": "Eu acordei com a sala enrolada. Meu braço direito está fraco e Formiga? A minha bolsa está muito alta e eu estou com tonturas. Como começou a fazer umas 2 horas?",
         "segments": [
           {
-            "text": "Eu acordei com a fala enrolada. Meu braço direito está fraco e estou me ligando. A minha boca está meio torta e eu estou com tontura. Como começou faz umas duas horas?",
-            "offset_s": 0.0
+            "text": "Eu acordei com a sala enrolada.",
+            "offset_s": 0.07,
+            "duration_s": 2.96,
+            "confidence": 0.81615007
+          },
+          {
+            "text": "Meu braço direito está fraco e Formiga?",
+            "offset_s": 3.95,
+            "duration_s": 5.04,
+            "confidence": 0.6437837
+          },
+          {
+            "text": "A minha bolsa está muito alta e eu estou com tonturas.",
+            "offset_s": 10.07,
+            "duration_s": 5.4,
+            "confidence": 0.71704155
+          },
+          {
+            "text": "Como começou a fazer umas 2 horas?",
+            "offset_s": 16.39,
+            "duration_s": 3.08,
+            "confidence": 0.708216
           }
         ],
         "words": [
           {
-            "word": "Eu",
-            "start_s": 0.0,
-            "end_s": 0.18
+            "word": "eu",
+            "start_s": 0.07,
+            "end_s": 0.23
           },
           {
             "word": "acordei",
-            "start_s": 0.18,
-            "end_s": 1.08
+            "start_s": 0.23,
+            "end_s": 1.11
           },
           {
             "word": "com",
-            "start_s": 1.08,
-            "end_s": 1.26
+            "start_s": 1.11,
+            "end_s": 1.31
           },
           {
             "word": "a",
-            "start_s": 1.26,
-            "end_s": 1.38
+            "start_s": 1.31,
+            "end_s": 1.63
           },
           {
-            "word": "fala",
-            "start_s": 1.38,
-            "end_s": 1.78
+            "word": "sala",
+            "start_s": 1.63,
+            "end_s": 1.91
           },
           {
-            "word": "enrolada.",
-            "start_s": 1.78,
-            "end_s": 3.52
+            "word": "enrolada",
+            "start_s": 1.91,
+            "end_s": 3.03
           },
           {
-            "word": "Meu",
-            "start_s": 3.86,
-            "end_s": 4.12
+            "word": "meu",
+            "start_s": 3.95,
+            "end_s": 4.23
           },
           {
             "word": "braço",
-            "start_s": 4.12,
-            "end_s": 4.92
+            "start_s": 4.31,
+            "end_s": 4.87
           },
           {
             "word": "direito",
-            "start_s": 4.92,
-            "end_s": 5.46
+            "start_s": 5.15,
+            "end_s": 5.67
           },
           {
             "word": "está",
-            "start_s": 5.46,
-            "end_s": 6.44
+            "start_s": 6.35,
+            "end_s": 6.51
           },
           {
             "word": "fraco",
-            "start_s": 6.44,
-            "end_s": 7.12
+            "start_s": 6.79,
+            "end_s": 7.55
           },
           {
             "word": "e",
-            "start_s": 7.12,
-            "end_s": 7.52
+            "start_s": 7.55,
+            "end_s": 7.59
           },
           {
-            "word": "estou",
-            "start_s": 7.52,
-            "end_s": 7.8
+            "word": "formiga",
+            "start_s": 7.59,
+            "end_s": 8.99
           },
           {
-            "word": "me",
-            "start_s": 7.8,
-            "end_s": 8.22
-          },
-          {
-            "word": "ligando.",
-            "start_s": 8.22,
-            "end_s": 9.98
-          },
-          {
-            "word": "A",
-            "start_s": 10.02,
-            "end_s": 10.22
+            "word": "a",
+            "start_s": 10.07,
+            "end_s": 10.27
           },
           {
             "word": "minha",
-            "start_s": 10.22,
-            "end_s": 10.56
+            "start_s": 10.27,
+            "end_s": 10.67
           },
           {
-            "word": "boca",
-            "start_s": 10.56,
-            "end_s": 11.0
+            "word": "bolsa",
+            "start_s": 10.67,
+            "end_s": 11.23
           },
           {
             "word": "está",
-            "start_s": 11.0,
-            "end_s": 11.54
+            "start_s": 11.23,
+            "end_s": 11.67
           },
           {
-            "word": "meio",
-            "start_s": 11.54,
-            "end_s": 11.88
+            "word": "muito",
+            "start_s": 11.67,
+            "end_s": 11.95
           },
           {
-            "word": "torta",
-            "start_s": 11.88,
-            "end_s": 13.14
+            "word": "alta",
+            "start_s": 12.15,
+            "end_s": 13.07
           },
           {
             "word": "e",
-            "start_s": 13.14,
-            "end_s": 13.54
+            "start_s": 13.39,
+            "end_s": 13.59
           },
           {
             "word": "eu",
-            "start_s": 13.54,
-            "end_s": 13.72
+            "start_s": 13.59,
+            "end_s": 13.75
           },
           {
             "word": "estou",
-            "start_s": 13.72,
-            "end_s": 14.12
+            "start_s": 13.75,
+            "end_s": 14.23
           },
           {
             "word": "com",
-            "start_s": 14.12,
-            "end_s": 14.54
+            "start_s": 14.23,
+            "end_s": 14.59
           },
           {
-            "word": "tontura.",
-            "start_s": 14.54,
-            "end_s": 16.0
+            "word": "tonturas",
+            "start_s": 14.59,
+            "end_s": 15.47
           },
           {
-            "word": "Como",
-            "start_s": 16.28,
-            "end_s": 16.72
+            "word": "como",
+            "start_s": 16.39,
+            "end_s": 16.71
           },
           {
             "word": "começou",
-            "start_s": 16.72,
-            "end_s": 17.16
+            "start_s": 16.71,
+            "end_s": 17.31
           },
           {
-            "word": "faz",
-            "start_s": 17.16,
-            "end_s": 17.58
+            "word": "a",
+            "start_s": 17.31,
+            "end_s": 17.35
+          },
+          {
+            "word": "fazer",
+            "start_s": 17.35,
+            "end_s": 17.71
           },
           {
             "word": "umas",
-            "start_s": 17.58,
-            "end_s": 17.82
+            "start_s": 17.71,
+            "end_s": 17.99
           },
           {
             "word": "duas",
-            "start_s": 17.82,
-            "end_s": 18.48
+            "start_s": 18.31,
+            "end_s": 18.63
           },
           {
-            "word": "horas?",
-            "start_s": 18.48,
-            "end_s": 20.48
+            "word": "horas",
+            "start_s": 18.63,
+            "end_s": 19.47
           }
         ],
-        "latency_s": 3.39,
+        "latency_s": 7.69,
         "errors": [],
         "ritmo_transcricao": {
-          "palavras_por_min": 93.8,
-          "pausas_entre_palavras_>=0.5s": 0,
-          "pausa_max_s": 0.34
+          "palavras_por_min": 95.9,
+          "pausas_entre_palavras_>=0.5s": 4,
+          "pausa_max_s": 1.08
         }
       },
       "nlp": {
-        "provider": "Léxico local (fallback)",
+        "provider": "Azure AI Language (Text Analytics)",
+        "errors": [],
         "sentimento": {
           "geral": "negative",
           "scores": {
-            "positivo": 0.0,
-            "neutro": 0.0,
-            "negativo": 1.0
+            "positivo": 0.01,
+            "neutro": 0.21,
+            "negativo": 0.78
           },
-          "frases": []
+          "frases": [
+            {
+              "texto": "Eu acordei com a sala enrolada. ",
+              "sentimento": "neutral",
+              "negativo": 0.01,
+              "opinioes": []
+            },
+            {
+              "texto": "Meu braço direito está fraco e Formiga? ",
+              "sentimento": "negative",
+              "negativo": 0.99,
+              "opinioes": []
+            },
+            {
+              "texto": "A minha bolsa está muito alta e eu estou com tonturas. ",
+              "sentimento": "negative",
+              "negativo": 0.57,
+              "opinioes": []
+            },
+            {
+              "texto": "Como começou a fazer umas 2 horas?",
+              "sentimento": "neutral",
+              "negativo": 0.01,
+              "opinioes": []
+            }
+          ]
         },
-        "frases_chave": [],
-        "entidades_saude": [],
-        "errors": [],
-        "latency_s": 0.0,
-        "termos_criticos": [
+        "frases_chave": [
+          "braço direito",
+          "sala",
+          "Formiga",
+          "bolsa",
+          "tonturas",
+          "2 horas"
+        ],
+        "entidades_saude": [
           {
-            "termo": "fala enrolada",
-            "categoria": "neurologica_avc",
-            "peso": 1.0
+            "texto": "braço",
+            "categoria": "BodyStructure",
+            "confianca": 0.99,
+            "negado": false,
+            "links": [
+              "UMLS:C0446516",
+              "AOD:0000017006",
+              "CHV:0000035650"
+            ]
           },
+          {
+            "texto": "direito",
+            "categoria": "Direction",
+            "confianca": 0.98,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "fraco",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.92,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "Formiga",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.65,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "bolsa",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.63,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "muito alta",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.68,
+            "negado": false,
+            "links": []
+          },
+          {
+            "texto": "tonturas",
+            "categoria": "SymptomOrSign",
+            "confianca": 0.99,
+            "negado": false,
+            "links": [
+              "UMLS:C0012833",
+              "AOD:0000004419",
+              "BI:BI00535"
+            ]
+          },
+          {
+            "texto": "umas 2 horas",
+            "categoria": "Time",
+            "confianca": 0.89,
+            "negado": false,
+            "links": []
+          }
+        ],
+        "latency_s": 6.56,
+        "termos_criticos": [
           {
             "termo": "braço direito está fraco",
             "categoria": "neurologica_avc",
             "peso": 0.8
           },
           {
-            "termo": "tontura",
+            "termo": "tonturas",
             "categoria": "neurologica_avc",
             "peso": 0.5
           }
         ]
       },
-      "sintomas_azure_health": [],
-      "tempo_processamento_s": 4.1,
+      "sintomas_azure_health": [
+        "fraco",
+        "Formiga",
+        "bolsa",
+        "muito alta",
+        "tonturas"
+      ],
+      "tempo_processamento_s": 15.0,
       "audioset_max": {
         "Breathing": 0.001,
         "Wheeze": 0.001,
@@ -1880,5 +2438,5 @@
       "hora_video": "14:00"
     }
   },
-  "tempo_total_s": 133.8
+  "tempo_total_s": 175.1
 }

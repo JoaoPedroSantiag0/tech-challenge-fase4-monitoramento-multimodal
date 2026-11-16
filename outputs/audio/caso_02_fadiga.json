@@ -85,225 +85,376 @@
     }
   },
   "transcricao": {
-    "provider": "Whisper local (fallback)",
-    "language": "pt",
-    "text": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Duermo o dia inteiro, mas a cor do exausto. Estou sem vontade de comer.",
+    "provider": "Azure Speech to Text",
+    "language": "pt-BR",
+    "text": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Durmo o dia inteiro, mas acordo exausto. Estou sem vontade de comer.",
     "segments": [
       {
-        "text": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Duermo o dia inteiro, mas a cor do exausto. Estou sem vontade de comer.",
-        "offset_s": 0.0
+        "text": "Doutor, eu estou muito cansado.",
+        "offset_s": 0.07,
+        "duration_s": 3.44,
+        "confidence": 0.8786018
+      },
+      {
+        "text": "Desde ontem não tenho forças nem para levantar da cama.",
+        "offset_s": 5.19,
+        "duration_s": 4.76,
+        "confidence": 0.89561176
+      },
+      {
+        "text": "Sinto uma fraqueza no corpo todo, um esgotamento.",
+        "offset_s": 11.52,
+        "duration_s": 4.76,
+        "confidence": 0.84985256
+      },
+      {
+        "text": "Durmo o dia inteiro, mas acordo exausto.",
+        "offset_s": 17.83,
+        "duration_s": 3.88,
+        "confidence": 0.7803929
+      },
+      {
+        "text": "Estou sem vontade de comer.",
+        "offset_s": 23.31,
+        "duration_s": 2.6,
+        "confidence": 0.8228678
       }
     ],
     "words": [
       {
-        "word": "Doutor,",
-        "start_s": 0.0,
-        "end_s": 1.3
+        "word": "doutor",
+        "start_s": 0.07,
+        "end_s": 0.99
       },
       {
         "word": "eu",
-        "start_s": 1.3,
-        "end_s": 1.52
+        "start_s": 1.31,
+        "end_s": 1.59
       },
       {
         "word": "estou",
-        "start_s": 1.52,
-        "end_s": 1.86
+        "start_s": 1.59,
+        "end_s": 1.95
       },
       {
         "word": "muito",
-        "start_s": 1.86,
-        "end_s": 2.44
+        "start_s": 1.95,
+        "end_s": 2.67
       },
       {
-        "word": "cansado.",
-        "start_s": 2.44,
-        "end_s": 4.8
+        "word": "cansado",
+        "start_s": 2.67,
+        "end_s": 3.51
       },
       {
-        "word": "Desde",
-        "start_s": 5.18,
-        "end_s": 5.56
+        "word": "desde",
+        "start_s": 5.19,
+        "end_s": 5.95
       },
       {
         "word": "ontem",
-        "start_s": 5.56,
-        "end_s": 6.34
+        "start_s": 5.95,
+        "end_s": 6.43
       },
       {
         "word": "não",
-        "start_s": 6.34,
-        "end_s": 6.54
+        "start_s": 6.43,
+        "end_s": 6.71
       },
       {
         "word": "tenho",
-        "start_s": 6.54,
-        "end_s": 6.9
+        "start_s": 6.71,
+        "end_s": 7.39
       },
       {
         "word": "forças",
-        "start_s": 6.9,
-        "end_s": 7.62
+        "start_s": 7.39,
+        "end_s": 7.83
       },
       {
         "word": "nem",
-        "start_s": 7.62,
-        "end_s": 7.98
+        "start_s": 7.83,
+        "end_s": 8.15
       },
       {
         "word": "para",
-        "start_s": 7.98,
-        "end_s": 8.32
+        "start_s": 8.15,
+        "end_s": 8.43
       },
       {
         "word": "levantar",
-        "start_s": 8.32,
-        "end_s": 9.1
+        "start_s": 8.43,
+        "end_s": 9.19
       },
       {
         "word": "da",
-        "start_s": 9.1,
-        "end_s": 9.28
+        "start_s": 9.19,
+        "end_s": 9.39
       },
       {
-        "word": "cama.",
-        "start_s": 9.28,
-        "end_s": 11.1
+        "word": "cama",
+        "start_s": 9.43,
+        "end_s": 9.95
       },
       {
-        "word": "Sinto",
-        "start_s": 11.5,
-        "end_s": 12.06
+        "word": "sinto",
+        "start_s": 11.52,
+        "end_s": 12.2
       },
       {
         "word": "uma",
-        "start_s": 12.06,
-        "end_s": 12.36
+        "start_s": 12.2,
+        "end_s": 12.48
       },
       {
         "word": "fraqueza",
-        "start_s": 12.36,
-        "end_s": 13.14
+        "start_s": 12.48,
+        "end_s": 13.28
       },
       {
         "word": "no",
-        "start_s": 13.14,
-        "end_s": 13.32
+        "start_s": 13.28,
+        "end_s": 13.44
       },
       {
         "word": "corpo",
-        "start_s": 13.32,
-        "end_s": 13.8
+        "start_s": 13.44,
+        "end_s": 14.28
       },
       {
-        "word": "todo,",
-        "start_s": 13.8,
-        "end_s": 14.76
+        "word": "todo",
+        "start_s": 14.28,
+        "end_s": 14.64
       },
       {
         "word": "um",
-        "start_s": 14.76,
-        "end_s": 15.02
+        "start_s": 14.84,
+        "end_s": 15.12
       },
       {
-        "word": "esgotamento.",
-        "start_s": 15.02,
-        "end_s": 17.06
+        "word": "esgotamento",
+        "start_s": 15.12,
+        "end_s": 16.28
       },
       {
-        "word": "Duermo",
-        "start_s": 17.74,
-        "end_s": 18.4
+        "word": "durmo",
+        "start_s": 17.83,
+        "end_s": 18.51
       },
       {
         "word": "o",
-        "start_s": 18.4,
-        "end_s": 18.68
+        "start_s": 18.51,
+        "end_s": 18.63
       },
       {
         "word": "dia",
-        "start_s": 18.68,
-        "end_s": 18.82
+        "start_s": 18.63,
+        "end_s": 18.87
       },
       {
-        "word": "inteiro,",
-        "start_s": 18.82,
-        "end_s": 19.88
+        "word": "inteiro",
+        "start_s": 18.87,
+        "end_s": 19.67
       },
       {
         "word": "mas",
-        "start_s": 19.88,
-        "end_s": 20.22
+        "start_s": 19.91,
+        "end_s": 20.35
       },
       {
-        "word": "a",
-        "start_s": 20.22,
-        "end_s": 20.44
+        "word": "acordo",
+        "start_s": 20.35,
+        "end_s": 20.99
       },
       {
-        "word": "cor",
-        "start_s": 20.44,
-        "end_s": 20.72
+        "word": "exausto",
+        "start_s": 20.99,
+        "end_s": 21.71
       },
       {
-        "word": "do",
-        "start_s": 20.72,
-        "end_s": 20.92
-      },
-      {
-        "word": "exausto.",
-        "start_s": 20.92,
-        "end_s": 22.18
-      },
-      {
-        "word": "Estou",
-        "start_s": 23.28,
-        "end_s": 23.78
+        "word": "estou",
+        "start_s": 23.31,
+        "end_s": 23.95
       },
       {
         "word": "sem",
-        "start_s": 23.78,
-        "end_s": 24.16
+        "start_s": 23.95,
+        "end_s": 24.27
       },
       {
         "word": "vontade",
-        "start_s": 24.16,
-        "end_s": 24.76
+        "start_s": 24.27,
+        "end_s": 25.15
       },
       {
         "word": "de",
-        "start_s": 24.76,
-        "end_s": 25.2
+        "start_s": 25.15,
+        "end_s": 25.31
       },
       {
-        "word": "comer.",
-        "start_s": 25.2,
-        "end_s": 27.44
+        "word": "comer",
+        "start_s": 25.31,
+        "end_s": 25.91
       }
     ],
-    "latency_s": 4.11,
+    "latency_s": 11.09,
     "errors": [],
     "ritmo_transcricao": {
-      "palavras_por_min": 80.9,
-      "pausas_entre_palavras_>=0.5s": 2,
-      "pausa_max_s": 1.1
+      "palavras_por_min": 81.3,
+      "pausas_entre_palavras_>=0.5s": 4,
+      "pausa_max_s": 1.68
     }
   },
   "nlp": {
-    "provider": "Léxico local (fallback)",
+    "provider": "Azure AI Language (Text Analytics)",
+    "errors": [],
     "sentimento": {
       "geral": "negative",
       "scores": {
-        "positivo": 0.0,
-        "neutro": 0.0,
-        "negativo": 1.0
+        "positivo": 0.01,
+        "neutro": 0.19,
+        "negativo": 0.8
       },
-      "frases": []
+      "frases": [
+        {
+          "texto": "Doutor, eu estou muito cansado. ",
+          "sentimento": "negative",
+          "negativo": 1.0,
+          "opinioes": []
+        },
+        {
+          "texto": "Desde ontem não tenho forças nem para levantar da cama. ",
+          "sentimento": "negative",
+          "negativo": 0.76,
+          "opinioes": []
+        },
+        {
+          "texto": "Sinto uma fraqueza no corpo todo, um esgotamento. ",
+          "sentimento": "negative",
+          "negativo": 0.99,
+          "opinioes": [
+            {
+              "alvo": "corpo",
+              "sentimento": "negative",
+              "avaliacoes": [
+                "fraqueza",
+                "esgotamento"
+              ]
+            }
+          ]
+        },
+        {
+          "texto": "Durmo o dia inteiro, mas acordo exausto. ",
+          "sentimento": "negative",
+          "negativo": 0.5,
+          "opinioes": []
+        },
+        {
+          "texto": "Estou sem vontade de comer.",
+          "sentimento": "negative",
+          "negativo": 0.77,
+          "opinioes": []
+        }
+      ]
     },
-    "frases_chave": [],
-    "entidades_saude": [],
-    "errors": [],
-    "latency_s": 0.0,
+    "frases_chave": [
+      "forças",
+      "Doutor",
+      "ontem",
+      "cama",
+      "fraqueza",
+      "corpo",
+      "esgotamento",
+      "vontade"
+    ],
+    "entidades_saude": [
+      {
+        "texto": "muito",
+        "categoria": "ConditionQualifier",
+        "confianca": 0.77,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "cansado",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "ontem",
+        "categoria": "Time",
+        "confianca": 0.97,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "forças nem para levantar da cama",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.91,
+        "negado": true,
+        "links": []
+      },
+      {
+        "texto": "fraqueza",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": false,
+        "links": [
+          "UMLS:C3714552",
+          "BI:BI00748",
+          "CCPSS:1014560"
+        ]
+      },
+      {
+        "texto": "corpo todo",
+        "categoria": "BodyStructure",
+        "confianca": 0.7,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "esgotamento",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.97,
+        "negado": false,
+        "links": [
+          "UMLS:C0015672",
+          "AIR:FATIG",
+          "AOD:0000001768"
+        ]
+      },
+      {
+        "texto": "Durmo",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.74,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "dia",
+        "categoria": "Time",
+        "confianca": 0.97,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "acordo exausto",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.79,
+        "negado": false,
+        "links": []
+      },
+      {
+        "texto": "vontade de comer",
+        "categoria": "SymptomOrSign",
+        "confianca": 0.99,
+        "negado": true,
+        "links": []
+      }
+    ],
+    "latency_s": 6.06,
     "termos_criticos": [
       {
         "termo": "cansado",
@@ -332,6 +483,12 @@
       }
     ]
   },
-  "sintomas_azure_health": [],
-  "tempo_processamento_s": 5.1
+  "sintomas_azure_health": [
+    "cansado",
+    "fraqueza",
+    "esgotamento",
+    "Durmo",
+    "acordo exausto"
+  ],
+  "tempo_processamento_s": 18.2
 }
