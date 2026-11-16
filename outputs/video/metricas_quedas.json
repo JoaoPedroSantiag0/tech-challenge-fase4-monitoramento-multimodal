@@ -1,0 +1,35 @@
+{
+  "treino": {
+    "TP": 13,
+    "FP": 1,
+    "FN": 2,
+    "TN": 19,
+    "sensibilidade": 0.867,
+    "especificidade": 0.95,
+    "precisao": 0.929,
+    "f1": 0.897,
+    "acuracia_balanceada": 0.908
+  },
+  "teste": {
+    "TP": 13,
+    "FP": 3,
+    "FN": 2,
+    "TN": 17,
+    "sensibilidade": 0.867,
+    "especificidade": 0.85,
+    "precisao": 0.812,
+    "f1": 0.839,
+    "acuracia_balanceada": 0.858
+  },
+  "limiares_calibrados": {
+    "fall_drop_rate": 0.35,
+    "fall_window_s": 0.5,
+    "min_ground_s": 0.5,
+    "lying_torso_deg": 50.0,
+    "floor_zone_y": 0.66
+  },
+  "n_videos": {
+    "treino": 35,
+    "teste": 35
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "caso_01_controle": {
+    "arquivo": "caso_01_controle.wav",
+    "duracao_s": 16.0,
+    "texto_roteiro": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e a dor no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
+    "simulacao": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    }
+  },
+  "caso_02_fadiga": {
+    "arquivo": "caso_02_fadiga.wav",
+    "duracao_s": 27.5,
+    "texto_roteiro": "Doutor, eu estou muito cansado. Desde ontem não tenho forças nem para levantar da cama. Sinto uma fraqueza no corpo todo, um esgotamento. Durmo o dia inteiro, mas acordo exausto. Estou sem vontade de comer.",
+    "simulacao": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-35%",
+      "pitch": "-12Hz",
+      "volume": "-40%",
+      "pause_s": 1.6,
+      "monotone": true
+    }
+  },
+  "caso_03_dispneia": {
+    "arquivo": "caso_03_dispneia.wav",
+    "duracao_s": 21.0,
+    "texto_roteiro": "Doutora, eu estou com muita falta de ar. Não consigo terminar as frases. Sinto um aperto e uma dor no peito quando respiro. Piorou muito desde a madrugada. Estou com medo, não consigo respirar direito.",
+    "simulacao": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "volume": "+0%",
+      "insert": [
+        "breathing",
+        "breathing",
+        "coughing",
+        "breathing",
+        "coughing"
+      ]
+    }
+  },
+  "caso_04_disartria": {
+    "arquivo": "caso_04_disartria.wav",
+    "duracao_s": 20.5,
+    "texto_roteiro": "Eu acordei com a fala enrolada. Meu braço direito está fraco e formigando. A minha boca está meio torta e eu estou com tontura. Começou faz umas duas horas.",
+    "simulacao": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "-20%",
+      "pitch": "-5Hz",
+      "volume": "-10%",
+      "slur": true,
+      "pause_s": 0.9
+    }
+  }
+}

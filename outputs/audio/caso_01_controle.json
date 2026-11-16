@@ -1,0 +1,307 @@
+{
+  "arquivo": "caso_01_controle.wav",
+  "status": "NORMAL",
+  "achados": [],
+  "indicadores_vocais": {
+    "fadiga": {
+      "score": 0.0,
+      "evidencias": []
+    },
+    "dificuldade_respiratoria": {
+      "score": 0.01,
+      "evidencias": []
+    },
+    "disartria": {
+      "score": 0.0,
+      "evidencias": []
+    }
+  },
+  "biomarcadores": {
+    "duracao_s": 15.98,
+    "energia_dbfs": -17.6986,
+    "proporcao_pausas": 0.2403,
+    "n_pausas": 5,
+    "pausa_media_s": 0.584,
+    "fonacao_media_s": 0.4608,
+    "enunciado_medio_s": 2.612,
+    "taxa_fala_silabas_s": 4.0676,
+    "taxa_articulacao_silabas_s": 5.3542,
+    "irregularidade_ritmo_cv": 0.3692,
+    "energia_alta_freq_ratio": 0.0229,
+    "centroide_espectral_hz": 1655.3877,
+    "f0_mean_hz": 147.7145,
+    "f0_std_st": 3.7105,
+    "jitter_pct": 2.6567,
+    "shimmer_pct": 10.0137,
+    "hnr_db": 10.9527
+  },
+  "audioset": {
+    "max_prob": {
+      "Breathing": 0.001,
+      "Wheeze": 0.0,
+      "Gasp": 0.006,
+      "Pant": 0.0,
+      "Cough": 0.0,
+      "Snoring": 0.001,
+      "Throat clearing": 0.004,
+      "Sneeze": 0.001,
+      "Speech": 0.78
+    },
+    "eventos": [],
+    "rotulos_pt": {
+      "Breathing": "respiração",
+      "Wheeze": "sibilo",
+      "Gasp": "arquejo",
+      "Pant": "ofegar",
+      "Cough": "tosse",
+      "Snoring": "ronco",
+      "Throat clearing": "pigarro",
+      "Sneeze": "espirro",
+      "Speech": "fala"
+    }
+  },
+  "transcricao": {
+    "provider": "Whisper local (fallback)",
+    "language": "pt",
+    "text": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi à noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e adoro no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
+    "segments": [
+      {
+        "text": "Bom dia, doutor. Hoje eu estou me sentindo bem melhor. Dormi à noite toda e consegui caminhar no corredor com a fisioterapeuta. Estou me alimentando normalmente e adoro no joelho diminuiu bastante. Acho que já estou pronto para ir para casa.",
+        "offset_s": 0.0
+      }
+    ],
+    "words": [
+      {
+        "word": "Bom",
+        "start_s": 0.0,
+        "end_s": 0.24
+      },
+      {
+        "word": "dia,",
+        "start_s": 0.24,
+        "end_s": 0.88
+      },
+      {
+        "word": "doutor.",
+        "start_s": 0.88,
+        "end_s": 1.88
+      },
+      {
+        "word": "Hoje",
+        "start_s": 1.88,
+        "end_s": 2.2
+      },
+      {
+        "word": "eu",
+        "start_s": 2.2,
+        "end_s": 2.34
+      },
+      {
+        "word": "estou",
+        "start_s": 2.34,
+        "end_s": 2.54
+      },
+      {
+        "word": "me",
+        "start_s": 2.54,
+        "end_s": 2.7
+      },
+      {
+        "word": "sentindo",
+        "start_s": 2.7,
+        "end_s": 3.22
+      },
+      {
+        "word": "bem",
+        "start_s": 3.22,
+        "end_s": 3.48
+      },
+      {
+        "word": "melhor.",
+        "start_s": 3.48,
+        "end_s": 4.44
+      },
+      {
+        "word": "Dormi",
+        "start_s": 4.44,
+        "end_s": 4.84
+      },
+      {
+        "word": "à",
+        "start_s": 4.84,
+        "end_s": 4.96
+      },
+      {
+        "word": "noite",
+        "start_s": 4.96,
+        "end_s": 5.18
+      },
+      {
+        "word": "toda",
+        "start_s": 5.18,
+        "end_s": 5.56
+      },
+      {
+        "word": "e",
+        "start_s": 5.56,
+        "end_s": 5.74
+      },
+      {
+        "word": "consegui",
+        "start_s": 5.74,
+        "end_s": 6.12
+      },
+      {
+        "word": "caminhar",
+        "start_s": 6.12,
+        "end_s": 6.5
+      },
+      {
+        "word": "no",
+        "start_s": 6.5,
+        "end_s": 6.68
+      },
+      {
+        "word": "corredor",
+        "start_s": 6.68,
+        "end_s": 7.12
+      },
+      {
+        "word": "com",
+        "start_s": 7.12,
+        "end_s": 7.3
+      },
+      {
+        "word": "a",
+        "start_s": 7.3,
+        "end_s": 7.42
+      },
+      {
+        "word": "fisioterapeuta.",
+        "start_s": 7.42,
+        "end_s": 8.8
+      },
+      {
+        "word": "Estou",
+        "start_s": 8.8,
+        "end_s": 9.18
+      },
+      {
+        "word": "me",
+        "start_s": 9.18,
+        "end_s": 9.3
+      },
+      {
+        "word": "alimentando",
+        "start_s": 9.3,
+        "end_s": 9.8
+      },
+      {
+        "word": "normalmente",
+        "start_s": 9.8,
+        "end_s": 10.24
+      },
+      {
+        "word": "e",
+        "start_s": 10.24,
+        "end_s": 10.64
+      },
+      {
+        "word": "adoro",
+        "start_s": 10.64,
+        "end_s": 10.9
+      },
+      {
+        "word": "no",
+        "start_s": 10.9,
+        "end_s": 11.1
+      },
+      {
+        "word": "joelho",
+        "start_s": 11.14,
+        "end_s": 11.46
+      },
+      {
+        "word": "diminuiu",
+        "start_s": 11.46,
+        "end_s": 12.0
+      },
+      {
+        "word": "bastante.",
+        "start_s": 12.0,
+        "end_s": 13.08
+      },
+      {
+        "word": "Acho",
+        "start_s": 13.08,
+        "end_s": 13.44
+      },
+      {
+        "word": "que",
+        "start_s": 13.44,
+        "end_s": 13.62
+      },
+      {
+        "word": "já",
+        "start_s": 13.62,
+        "end_s": 13.76
+      },
+      {
+        "word": "estou",
+        "start_s": 13.76,
+        "end_s": 13.96
+      },
+      {
+        "word": "pronto",
+        "start_s": 13.96,
+        "end_s": 14.32
+      },
+      {
+        "word": "para",
+        "start_s": 14.32,
+        "end_s": 14.58
+      },
+      {
+        "word": "ir",
+        "start_s": 14.58,
+        "end_s": 14.78
+      },
+      {
+        "word": "para",
+        "start_s": 14.78,
+        "end_s": 14.96
+      },
+      {
+        "word": "casa.",
+        "start_s": 14.96,
+        "end_s": 15.96
+      }
+    ],
+    "latency_s": 5.14,
+    "errors": [],
+    "ritmo_transcricao": {
+      "palavras_por_min": 154.1,
+      "pausas_entre_palavras_>=0.5s": 0,
+      "pausa_max_s": 0.04
+    }
+  },
+  "nlp": {
+    "provider": "Léxico local (fallback)",
+    "sentimento": {
+      "geral": "positive",
+      "scores": {
+        "positivo": 0.6666666666666666,
+        "neutro": 0.0,
+        "negativo": 0.3333333333333333
+      },
+      "frases": []
+    },
+    "frases_chave": [],
+    "entidades_saude": [],
+    "errors": [],
+    "latency_s": 0.0,
+    "termos_criticos": []
+  },
+  "sintomas_azure_health": [],
+  "tempo_processamento_s": 10.4
+}

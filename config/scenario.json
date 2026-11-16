@@ -1,0 +1,38 @@
+{
+  "_descricao": "Cenário de demonstração: 4 leitos de UTI. Sinais vitais, prescrições e movimentação vêm de internações REAIS do MIMIC-IV Demo (PhysioNet), deslocadas para a data da demonstração. Vídeos (UR Fall Detection) e áudios (consultas simuladas) são associados aos leitos para compor o fluxo multimodal — as modalidades provêm de bases distintas e a associação é ilustrativa.",
+  "demo_start": "2026-11-16 00:00:00",
+  "duration_h": 24,
+  "patients": [
+    {
+      "patient_id": "Leito 01",
+      "nome": "Paciente A (M, 71a)",
+      "stay_id": 39061571,
+      "window_start": "2185-01-17 19:00:00",
+      "audio": {"file": "data/raw/audio/consultas/caso_02_fadiga.wav", "offset_h": 9.0, "contexto": "Visita médica matinal"},
+      "video": {"file": "data/raw/urfd/fall-20-cam0.mp4", "offset_h": 21.5, "contexto": "Câmera do quarto (noite)"}
+    },
+    {
+      "patient_id": "Leito 02",
+      "nome": "Paciente B (F, 64a)",
+      "stay_id": 36753294,
+      "window_start": "2141-05-23 02:00:00",
+      "audio": {"file": "data/raw/audio/consultas/caso_03_dispneia.wav", "offset_h": "spo2_min-0.5", "contexto": "Teleconsulta de enfermagem"}
+    },
+    {
+      "patient_id": "Leito 03",
+      "nome": "Paciente C (F, 58a)",
+      "stay_id": 32359580,
+      "window_start": "2146-06-22 11:00:00",
+      "audio": {"file": "data/raw/audio/consultas/caso_04_disartria.wav", "offset_h": "sbp_max+0.5", "contexto": "Paciente aciona a enfermagem pelo interfone"},
+      "video": {"file": "data/raw/urfd/adl-25-cam0.mp4", "offset_h": 1.0, "contexto": "Câmera do quarto"}
+    },
+    {
+      "patient_id": "Leito 04",
+      "nome": "Paciente D (M, 45a) — controle",
+      "stay_id": 38559363,
+      "window_start": "2140-06-18 19:00:00",
+      "audio": {"file": "data/raw/audio/consultas/caso_01_controle.wav", "offset_h": 10.0, "contexto": "Visita médica matinal"},
+      "video": {"file": "data/raw/urfd/adl-22-cam0.mp4", "offset_h": 14.0, "contexto": "Deambulação no quarto (senta no sofá)"}
+    }
+  ]
+}

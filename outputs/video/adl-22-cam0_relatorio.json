@@ -1,0 +1,45 @@
+{
+  "video": "adl-22-cam0",
+  "duracao_s": 7.97,
+  "frames_analisados": 240,
+  "cobertura_pose_pct": 58.8,
+  "tempo_por_postura_s": {
+    "em pe": 8.0
+  },
+  "amplitude_articular_graus": {
+    "knee_r": {
+      "min": 166.9,
+      "max": 179.9
+    },
+    "knee_l": {
+      "min": 165.8,
+      "max": 180.0
+    },
+    "hip_r": {
+      "min": 161.6,
+      "max": 178.7
+    },
+    "hip_l": {
+      "min": 163.6,
+      "max": 173.3
+    },
+    "elbow_r": {
+      "min": 141.9,
+      "max": 162.9
+    },
+    "elbow_l": {
+      "min": 124.4,
+      "max": 179.3
+    },
+    "shoulder_r": {
+      "min": 17.5,
+      "max": 31.7
+    },
+    "shoulder_l": {
+      "min": 5.6,
+      "max": 41.1
+    }
+  },
+  "eventos": [],
+  "status": "NORMAL"
+}

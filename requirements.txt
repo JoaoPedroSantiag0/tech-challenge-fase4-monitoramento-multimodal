@@ -1,0 +1,22 @@
+# PyTorch (GPU NVIDIA série 50xx exige CUDA 12.8):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+numpy
+pandas
+scipy
+scikit-learn
+opencv-python
+ultralytics            # YOLOv8
+matplotlib
+plotly
+librosa                # features acústicas
+soundfile
+praat-parselmouth      # jitter, shimmer, HNR (Praat)
+transformers           # AST (AudioSet) e Whisper (fallback local)
+azure-cognitiveservices-speech   # Azure Speech to Text
+azure-ai-textanalytics           # Azure Text Analytics (Language)
+edge-tts               # geração das gravações de consulta simuladas
+python-dotenv
+requests
+streamlit              # Central de Alertas (dashboard da equipe médica)
+pyarrow
+pytest

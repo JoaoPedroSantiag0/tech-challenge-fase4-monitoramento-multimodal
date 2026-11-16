@@ -1,0 +1,63 @@
+{
+  "video": "fall-20-cam0",
+  "duracao_s": 3.63,
+  "frames_analisados": 110,
+  "cobertura_pose_pct": 100.0,
+  "tempo_por_postura_s": {
+    "no chao": 2.2,
+    "em pe": 1.5
+  },
+  "amplitude_articular_graus": {
+    "knee_r": {
+      "min": 40.8,
+      "max": 100.9
+    },
+    "knee_l": {
+      "min": 22.6,
+      "max": 110.9
+    },
+    "hip_r": {
+      "min": 79.4,
+      "max": 163.9
+    },
+    "hip_l": {
+      "min": 1.7,
+      "max": 102.2
+    },
+    "elbow_r": {
+      "min": 98.8,
+      "max": 155.6
+    },
+    "elbow_l": {
+      "min": 22.3,
+      "max": 172.1
+    },
+    "shoulder_r": {
+      "min": 7.7,
+      "max": 71.0
+    },
+    "shoulder_l": {
+      "min": 0.6,
+      "max": 42.8
+    }
+  },
+  "eventos": [
+    {
+      "kind": "queda",
+      "severity": "CRITICO",
+      "t_start": 1.0,
+      "t_end": 3.6333333333333333,
+      "description": "Queda detectada: descida rápida da cabeça (0.36 alturas/s) seguida de postura horizontal/no piso por 2.1s fora de cama/sofá.",
+      "evidence": {
+        "drop_rate": 0.356,
+        "torso_angle_max": 74.7,
+        "bbox_aspect_max": 1.38,
+        "objetos_em_cena": [
+          "cadeira",
+          "pessoa"
+        ]
+      }
+    }
+  ],
+  "status": "ANOMALIA"
+}

@@ -1,0 +1,23 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.remember/
+.pytest_cache/
+
+# dados brutos e modelos (baixados pelos scripts de setup)
+data/raw/urfd/
+data/raw/mimic_iv_demo/
+data/raw/audio/esc50/
+data/processed/
+models/*.pt
+models/*.pth
+
+# arquivos temporários de vídeo
+*.tmp.mp4
+outputs/stream_state.json
+outputs/acks.json
+.playwright-mcp/
+outputs/*_log.txt
+outputs/dashboard_live.png
+*.pdf

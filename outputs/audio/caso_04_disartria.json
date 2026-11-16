@@ -1,0 +1,297 @@
+{
+  "arquivo": "caso_04_disartria.wav",
+  "status": "CRITICO",
+  "achados": [
+    {
+      "condicao": "suspeita_avc",
+      "severidade": "CRITICO",
+      "descricao": "Disartria na voz + relato de sinais neurológicos focais (protocolo AVC — SAMU/código AVC)",
+      "evidencias": [
+        "articulação pouco nítida: energia de consoantes (>2 kHz) 98% menor",
+        "articulação 14% mais lenta",
+        "relato: fala enrolada",
+        "relato: braço direito está fraco",
+        "relato: tontura"
+      ]
+    }
+  ],
+  "indicadores_vocais": {
+    "fadiga": {
+      "score": 0.305,
+      "evidencias": [
+        "fala 27% mais lenta que a linha de base (2.9 síl/s)",
+        "pausas ocupam 35% do tempo (base 22%)"
+      ]
+    },
+    "dificuldade_respiratoria": {
+      "score": 0.021,
+      "evidencias": []
+    },
+    "disartria": {
+      "score": 0.556,
+      "evidencias": [
+        "articulação pouco nítida: energia de consoantes (>2 kHz) 98% menor",
+        "articulação 14% mais lenta"
+      ]
+    }
+  },
+  "biomarcadores": {
+    "duracao_s": 20.5,
+    "energia_dbfs": -19.9212,
+    "proporcao_pausas": 0.3483,
+    "n_pausas": 6,
+    "pausa_media_s": 0.7733,
+    "fonacao_media_s": 0.4552,
+    "enunciado_medio_s": 2.6433,
+    "taxa_fala_silabas_s": 2.9268,
+    "taxa_articulacao_silabas_s": 4.491,
+    "irregularidade_ritmo_cv": 0.3756,
+    "energia_alta_freq_ratio": 0.0004,
+    "centroide_espectral_hz": 1209.1664,
+    "f0_mean_hz": 225.9878,
+    "f0_std_st": 3.8688,
+    "jitter_pct": 2.1943,
+    "shimmer_pct": 10.6565,
+    "hnr_db": 13.6465
+  },
+  "audioset": {
+    "max_prob": {
+      "Breathing": 0.001,
+      "Wheeze": 0.001,
+      "Gasp": 0.004,
+      "Pant": 0.0,
+      "Cough": 0.0,
+      "Snoring": 0.001,
+      "Throat clearing": 0.012,
+      "Sneeze": 0.01,
+      "Speech": 0.813
+    },
+    "eventos": [],
+    "rotulos_pt": {
+      "Breathing": "respiração",
+      "Wheeze": "sibilo",
+      "Gasp": "arquejo",
+      "Pant": "ofegar",
+      "Cough": "tosse",
+      "Snoring": "ronco",
+      "Throat clearing": "pigarro",
+      "Sneeze": "espirro",
+      "Speech": "fala"
+    }
+  },
+  "transcricao": {
+    "provider": "Whisper local (fallback)",
+    "language": "pt",
+    "text": "Eu acordei com a fala enrolada. Meu braço direito está fraco e estou me ligando. A minha boca está meio torta e eu estou com tontura. Como começou faz umas duas horas?",
+    "segments": [
+      {
+        "text": "Eu acordei com a fala enrolada. Meu braço direito está fraco e estou me ligando. A minha boca está meio torta e eu estou com tontura. Como começou faz umas duas horas?",
+        "offset_s": 0.0
+      }
+    ],
+    "words": [
+      {
+        "word": "Eu",
+        "start_s": 0.0,
+        "end_s": 0.18
+      },
+      {
+        "word": "acordei",
+        "start_s": 0.18,
+        "end_s": 1.08
+      },
+      {
+        "word": "com",
+        "start_s": 1.08,
+        "end_s": 1.26
+      },
+      {
+        "word": "a",
+        "start_s": 1.26,
+        "end_s": 1.38
+      },
+      {
+        "word": "fala",
+        "start_s": 1.38,
+        "end_s": 1.78
+      },
+      {
+        "word": "enrolada.",
+        "start_s": 1.78,
+        "end_s": 3.52
+      },
+      {
+        "word": "Meu",
+        "start_s": 3.86,
+        "end_s": 4.12
+      },
+      {
+        "word": "braço",
+        "start_s": 4.12,
+        "end_s": 4.92
+      },
+      {
+        "word": "direito",
+        "start_s": 4.92,
+        "end_s": 5.46
+      },
+      {
+        "word": "está",
+        "start_s": 5.46,
+        "end_s": 6.44
+      },
+      {
+        "word": "fraco",
+        "start_s": 6.44,
+        "end_s": 7.12
+      },
+      {
+        "word": "e",
+        "start_s": 7.12,
+        "end_s": 7.52
+      },
+      {
+        "word": "estou",
+        "start_s": 7.52,
+        "end_s": 7.8
+      },
+      {
+        "word": "me",
+        "start_s": 7.8,
+        "end_s": 8.22
+      },
+      {
+        "word": "ligando.",
+        "start_s": 8.22,
+        "end_s": 9.98
+      },
+      {
+        "word": "A",
+        "start_s": 10.02,
+        "end_s": 10.22
+      },
+      {
+        "word": "minha",
+        "start_s": 10.22,
+        "end_s": 10.56
+      },
+      {
+        "word": "boca",
+        "start_s": 10.56,
+        "end_s": 11.0
+      },
+      {
+        "word": "está",
+        "start_s": 11.0,
+        "end_s": 11.54
+      },
+      {
+        "word": "meio",
+        "start_s": 11.54,
+        "end_s": 11.88
+      },
+      {
+        "word": "torta",
+        "start_s": 11.88,
+        "end_s": 13.14
+      },
+      {
+        "word": "e",
+        "start_s": 13.14,
+        "end_s": 13.54
+      },
+      {
+        "word": "eu",
+        "start_s": 13.54,
+        "end_s": 13.72
+      },
+      {
+        "word": "estou",
+        "start_s": 13.72,
+        "end_s": 14.12
+      },
+      {
+        "word": "com",
+        "start_s": 14.12,
+        "end_s": 14.54
+      },
+      {
+        "word": "tontura.",
+        "start_s": 14.54,
+        "end_s": 16.0
+      },
+      {
+        "word": "Como",
+        "start_s": 16.28,
+        "end_s": 16.72
+      },
+      {
+        "word": "começou",
+        "start_s": 16.72,
+        "end_s": 17.16
+      },
+      {
+        "word": "faz",
+        "start_s": 17.16,
+        "end_s": 17.58
+      },
+      {
+        "word": "umas",
+        "start_s": 17.58,
+        "end_s": 17.82
+      },
+      {
+        "word": "duas",
+        "start_s": 17.82,
+        "end_s": 18.48
+      },
+      {
+        "word": "horas?",
+        "start_s": 18.48,
+        "end_s": 20.48
+      }
+    ],
+    "latency_s": 3.39,
+    "errors": [],
+    "ritmo_transcricao": {
+      "palavras_por_min": 93.8,
+      "pausas_entre_palavras_>=0.5s": 0,
+      "pausa_max_s": 0.34
+    }
+  },
+  "nlp": {
+    "provider": "Léxico local (fallback)",
+    "sentimento": {
+      "geral": "negative",
+      "scores": {
+        "positivo": 0.0,
+        "neutro": 0.0,
+        "negativo": 1.0
+      },
+      "frases": []
+    },
+    "frases_chave": [],
+    "entidades_saude": [],
+    "errors": [],
+    "latency_s": 0.0,
+    "termos_criticos": [
+      {
+        "termo": "fala enrolada",
+        "categoria": "neurologica_avc",
+        "peso": 1.0
+      },
+      {
+        "termo": "braço direito está fraco",
+        "categoria": "neurologica_avc",
+        "peso": 0.8
+      },
+      {
+        "termo": "tontura",
+        "categoria": "neurologica_avc",
+        "peso": 0.5
+      }
+    ]
+  },
+  "sintomas_azure_health": [],
+  "tempo_processamento_s": 4.1
+}
