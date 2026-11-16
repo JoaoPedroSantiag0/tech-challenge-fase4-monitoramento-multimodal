@@ -5,6 +5,7 @@ Ao vivo:   em outro terminal, python -m scripts.stream_demo
 """
 from __future__ import annotations
 
+import html
 import json
 import sys
 from pathlib import Path
@@ -38,6 +39,11 @@ st.markdown("""
 .kpi{font-size:13px;opacity:.85}
 .chip{display:inline-block;padding:2px 8px;border-radius:12px;font-size:12px;margin-right:6px;background:rgba(127,127,127,.15)}
 </style>""", unsafe_allow_html=True)
+
+
+def e(x) -> str:
+    """Escapa texto vindo de dados (transcrições, nomes de fármacos, descrições) antes de ir para HTML."""
+    return html.escape(str(x), quote=True)
 
 
 def load_state() -> dict | None:
@@ -123,12 +129,12 @@ def live_panel() -> None:
         with col:
             st.markdown(
                 f"<div class='bed' style='border-top-color:{risk_color(risk)}'>"
-                f"<h4>{pid}</h4><div class='kpi'>{p['nome']}</div>"
+                f"<h4>{e(pid)}</h4><div class='kpi'>{e(p['nome'])}</div>"
                 f"<div style='font-size:28px;font-weight:700;color:{risk_color(risk)}'>{100 * risk:.0f}% <span style='font-size:13px'>risco fundido</span></div>"
-                f"<div class='kpi'>NEWS2 <b>{pst.get('news2', '–')}</b> · FC <b>{v.get('hr', '–')}</b> · SpO2 <b>{v.get('spo2', '–')}</b> · "
-                f"PAS <b>{v.get('sbp', '–')}</b> · FR <b>{v.get('rr', '–')}</b></div>"
+                f"<div class='kpi'>NEWS2 <b>{e(pst.get('news2', '–'))}</b> · FC <b>{e(v.get('hr', '–'))}</b> · SpO2 <b>{e(v.get('spo2', '–'))}</b> · "
+                f"PAS <b>{e(v.get('sbp', '–'))}</b> · FR <b>{e(v.get('rr', '–'))}</b></div>"
                 f"<div class='kpi'>🔴 {n_crit} críticos · 🟠 {n_high} altos</div>"
-                + (f"<div class='kpi' style='margin-top:4px'>Último: {MOD_ICON.get(last['modality'], '')} {last['title']}</div>" if last is not None else "")
+                + (f"<div class='kpi' style='margin-top:4px'>Último: {MOD_ICON.get(last['modality'], '')} {e(last['title'])}</div>" if last is not None else "")
                 + "</div>", unsafe_allow_html=True)
 
     # ---------------- feed
@@ -155,11 +161,11 @@ def render_alert(a, acks: set, prefix: str) -> None:
     with c1:
         ok = "✔️ confirmado · " if a["id"] in acks else ""
         st.markdown(
-            f"<div class='alert-card' style='border-left-color:{SEV_COLOR[a['severity']]}'>"
-            f"<b style='color:{SEV_COLOR[a['severity']]}'>{SEV_LABEL[a['severity']]}</b> · "
-            f"<b>{a['patient_id']}</b> · {MOD_ICON.get(a['modality'], '')} {a['title']}<br>"
-            f"{a['description']}<br><small>{ok}{a['event_time']:%H:%M} · origem: {a['source']} · "
-            f"acionar: <b>{', '.join(a['notify'])}</b></small></div>", unsafe_allow_html=True)
+            f"<div class='alert-card' style='border-left-color:{SEV_COLOR.get(a['severity'], '#999')}'>"
+            f"<b style='color:{SEV_COLOR.get(a['severity'], '#999')}'>{e(SEV_LABEL.get(a['severity'], a['severity']))}</b> · "
+            f"<b>{e(a['patient_id'])}</b> · {MOD_ICON.get(a['modality'], '')} {e(a['title'])}<br>"
+            f"{e(a['description'])}<br><small>{ok}{a['event_time']:%H:%M} · origem: {e(a['source'])} · "
+            f"acionar: <b>{e(', '.join(a['notify']))}</b></small></div>", unsafe_allow_html=True)
     with c2:
         if a["id"] not in acks and a["severity"] in ("CRITICO", "ALTO"):
             if st.button("OK", key=f"ack_{prefix}_{a['id']}", help="Confirmar recebimento"):
@@ -250,8 +256,8 @@ with tabs[2]:
                 fig.update_layout(height=220, xaxis=dict(range=[0, 1]), margin=dict(l=10, r=10, t=10, b=10))
                 st.plotly_chart(fig, width="stretch")
                 for a in rep["achados"]:
-                    st.markdown(f"<span style='color:{SEV_COLOR[a['severidade']]}'>●</span> **{a['condicao']}** — "
-                                f"{a['descricao']}<br><small>{'; '.join(a['evidencias'])}</small>", unsafe_allow_html=True)
+                    st.markdown(f"<span style='color:{SEV_COLOR.get(a['severidade'], '#999')}'>●</span> <b>{e(a['condicao'])}</b> — "
+                                f"{e(a['descricao'])}<br><small>{e('; '.join(a['evidencias']))}</small>", unsafe_allow_html=True)
                 rs = {k: v for k, v in rep["audioset"]["max_prob"].items() if v > 0.1 and k != "Speech"}
                 if rs:
                     st.markdown("**AudioSet (AST):** " + ", ".join(f"{k} {v:.2f}" for k, v in rs.items()))

@@ -23,7 +23,7 @@ CRITICAL_TERMS = {
     r"dor no peito|aperto no peito|aperto e uma dor no peito|dor toracica": ("cardiaca", 0.9),
     r"palpitac|coracao acelerado|coracao disparado": ("cardiaca", 0.6),
     r"fala enrolada|fala arrastada|nao consigo falar|boca (meio )?torta|rosto torto": ("neurologica_avc", 1.0),
-    r"braco .*fraco|perna .*fraca|formigando|formigamento|dormencia|dormente": ("neurologica_avc", 0.8),
+    r"braco [a-z\s]{0,30}?fraco|perna [a-z\s]{0,30}?fraca|formigando|formigamento|dormencia|dormente": ("neurologica_avc", 0.8),
     r"tontura|desmai|confus|visao turva|visao dupla": ("neurologica_avc", 0.5),
     r"cansad|cansaco|exaust|esgotament|fraqueza|sem forcas|sem energia|sonolen": ("fadiga", 0.6),
     r"sem vontade de comer|sem apetite|inapetencia": ("fadiga", 0.3),
